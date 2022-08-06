@@ -38,7 +38,7 @@ include "../include/restrict.php";
     }
 
     .text-2::-webkit-scrollbar-thumb {
-        background: linear-gradient(to bottom, #44A08D, #093637);
+        background: linear-gradient(to bottom, #c1c1c1, #c1c1c1);
         border-radius: 10px;
     }
 </style>

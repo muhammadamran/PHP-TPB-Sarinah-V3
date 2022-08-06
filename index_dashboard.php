@@ -100,6 +100,7 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                     <!-- Line 1 -->
                     <div class="row">
                         <div class="col-xl-4">
+                            <div id="table_aktifitas_sistem"></div>
                         </div>
                         <div class="col-xl-4">
                             <div id="table_pengguna_sedang_aktif"></div>
@@ -124,10 +125,19 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                                             <div class="d-flex mb-1">
                                                 <?php if ($resultSetDevice['log_agent'] == 'Desktop') { ?>
                                                     <h2 class="mb-0">Akses Desktop</span></h2>
+                                                    <div style="margin-top: 15px;font-size: 7px;margin-left: 3px;color: greenyellow;" class="blink_me">
+                                                        <i class="fas fa-circle"></i> Online
+                                                    </div>
                                                 <?php } else if ($resultSetDevice['log_agent'] == 'Mobile') { ?>
                                                     <h2 class="mb-0">Akses Mobile</span></h2>
+                                                    <div style="margin-top: 15px;font-size: 7px;margin-left: 3px;color: greenyellow;" class="blink_me">
+                                                        <i class="fas fa-circle"></i> Online
+                                                    </div>
                                                 <?php } else { ?>
                                                     <h2 class="mb-0">Tidak dikenali!</span></h2>
+                                                    <div style="margin-top: 15px;font-size: 7px;margin-left: 3px;color: red;" class="blink_me">
+                                                        <i class="fas fa-circle"></i> Online
+                                                    </div>
                                                 <?php } ?>
                                                 <div class="ml-auto mt-n1 mb-n1">
                                                     <div id="total-sales-sparkline"></div>
@@ -169,8 +179,13 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                             </div>
                         </div>
                         <!-- End Device Sign In -->
+                        <!-- Data Pengguna All -->
+                        <div class="col-xl-12">
+                            <div id="data-pengguna-all"></div>
+                        </div>
+                        <!-- End Data Pengguna All -->
                         <!-- Dashboard Mitra -->
-                        <div class="col-xl-8">
+                        <div class="col-xl-4">
                             <div class="panel panel-inverse" id="data-mitra-chart">
                                 <!-- begin panel-heading -->
                                 <div class="panel-heading">
@@ -179,10 +194,10 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                                 </div>
                                 <div class="panel-body">
                                     <div class="row">
-                                        <div class="col-xl-8">
-                                            <div id="chart_mitra_line"></div>
-                                        </div>
-                                        <div class="col-xl-4">
+                                        <!-- <div class="col-xl-8"> -->
+                                        <!-- <div id="chart_mitra_line"></div> -->
+                                        <!-- </div> -->
+                                        <div class="col-xl-12">
                                             <div id="chart_mitra_pie"></div>
                                         </div>
                                     </div>
@@ -191,11 +206,11 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                         </div>
                         <!-- End Dashboard Mitra -->
                         <!-- Nama Pengangkut -->
-                        <div class="col-xl-4">
+                        <div class="col-xl-8">
                             <div class="panel panel-inverse">
                                 <!-- begin panel-heading -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Pengangkut <?= $alertAppName ?></h4>
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Pengangkut <?= $resultSetting['company']  ?></h4>
                                     <?php include "include/panel-row.php"; ?>
                                 </div>
                                 <div class="panel-body">
@@ -209,7 +224,7 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                             <div class="panel panel-inverse">
                                 <!-- begin panel-heading -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="fas fa-chart-pie"></i> Valuta <?= $alertAppName ?></h4>
+                                    <h4 class="panel-title"><i class="fas fa-chart-pie"></i> Valuta <?= $resultSetting['company']  ?></h4>
                                     <?php include "include/panel-row.php"; ?>
                                 </div>
                                 <div class="panel-body">
@@ -223,7 +238,7 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                             <div class="panel panel-inverse">
                                 <!-- begin panel-heading -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Kantor Tujuan <?= $alertAppName ?></h4>
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Kantor Tujuan <?= $resultSetting['company']  ?></h4>
                                     <?php include "include/panel-row.php"; ?>
                                 </div>
                                 <div class="panel-body">
@@ -237,7 +252,7 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                             <div class="panel panel-inverse">
                                 <!-- begin panel-heading -->
                                 <div class="panel-heading">
-                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Jumlah Netto Per Tahun Aju <?= $alertAppName ?></h4>
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Jumlah Netto Per Tahun Aju <?= $resultSetting['company']  ?></h4>
                                     <?php include "include/panel-row.php"; ?>
                                 </div>
                                 <div class="panel-body">
@@ -248,9 +263,6 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                         <!-- End Jumlah Netto Per Tahun Aju -->
                     </div>
                     <!-- End Line 1 -->
-                    <!-- Data Pengguna All -->
-                    <div id="data-pengguna-all"></div>
-                    <!-- End Data Pengguna All -->
                 </div>
             </div>
         </div>
@@ -278,6 +290,24 @@ include "include/jsDatatables.php";
     }
 
     // REALTIME DATA LOAD
+    // Pengguna Aktifitas Sistem
+    function RealTimePenggunaAktifitasSistem() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("table_aktifitas_sistem").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "realtime/index_aktifitas_sistem.php", true);
+        xhttp.send();
+    }
+    setInterval(function() {
+        RealTimePenggunaAktifitasSistem();
+        // Time
+    }, 1000);
+    window.onload = RealTimePenggunaAktifitasSistem;
+
     // Pengguna Sedang Aktif
     function RealTimePenggunaSedangAktif() {
         var xhttp = new XMLHttpRequest();
@@ -293,7 +323,7 @@ include "include/jsDatatables.php";
     setInterval(function() {
         RealTimePenggunaSedangAktif();
         // Time
-    }, 50000);
+    }, 1000);
     window.onload = RealTimePenggunaSedangAktif;
 
     // Pengguna All
@@ -318,85 +348,85 @@ include "include/jsDatatables.php";
 <!-- ================== BEGIN PAGE LEVEL JS ================== -->
 <script type="text/javascript">
     // Chart Line Progress Mitra
-    Highcharts.chart('chart_mitra_line', {
-        title: {
-            text: 'Aktifitas Mitra <?= $resultSetting['company']  ?>'
-        },
+    // Highcharts.chart('chart_mitra_line', {
+    //     title: {
+    //         text: 'Aktifitas Mitra <?= $resultSetting['company']  ?>'
+    //     },
 
-        subtitle: {
-            text: 'Update: <?= date_indo(date('Y-m-d')); ?>'
-        },
+    //     subtitle: {
+    //         text: 'Update: <?= date_indo(date('Y-m-d')); ?>'
+    //     },
 
-        xAxis: {
-            categories: []
-        },
+    //     xAxis: {
+    //         categories: []
+    //     },
 
-        yAxis: {
-            title: {
-                text: 'Jumlah Biaya'
-            }
-        },
+    //     yAxis: {
+    //         title: {
+    //             text: 'Jumlah Biaya'
+    //         }
+    //     },
 
-        tooltip: {
-            crosshairs: true,
-            shared: true
-        },
-        plotOptions: {
-            line: {
-                dataLabels: {
-                    enabled: true
-                },
-                enableMouseTracking: true
-            }
-        },
+    //     tooltip: {
+    //         crosshairs: true,
+    //         shared: true
+    //     },
+    //     plotOptions: {
+    //         line: {
+    //             dataLabels: {
+    //                 enabled: true
+    //             },
+    //             enableMouseTracking: true
+    //         }
+    //     },
 
-        series: [{
-            name: 'A',
-            marker: {
-                symbol: 'circle'
-            },
-            data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-        }, {
-            name: 'B',
-            marker: {
-                symbol: 'circle'
-            },
-            data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
-        }, {
-            name: 'C',
-            marker: {
-                symbol: 'circle'
-            },
-            data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
-        }, {
-            name: 'C',
-            marker: {
-                symbol: 'circle'
-            },
-            data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
-        }, {
-            name: 'D',
-            marker: {
-                symbol: 'circle'
-            },
-            data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
-        }],
+    //     series: [{
+    //         name: 'A',
+    //         marker: {
+    //             symbol: 'circle'
+    //         },
+    //         data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+    //     }, {
+    //         name: 'B',
+    //         marker: {
+    //             symbol: 'circle'
+    //         },
+    //         data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
+    //     }, {
+    //         name: 'C',
+    //         marker: {
+    //             symbol: 'circle'
+    //         },
+    //         data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
+    //     }, {
+    //         name: 'C',
+    //         marker: {
+    //             symbol: 'circle'
+    //         },
+    //         data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
+    //     }, {
+    //         name: 'D',
+    //         marker: {
+    //             symbol: 'circle'
+    //         },
+    //         data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
+    //     }],
 
-        responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 500
-                },
-                chartOptions: {
-                    legend: {
-                        layout: 'horizontal',
-                        align: 'center',
-                        verticalAlign: 'bottom'
-                    }
-                }
-            }]
-        }
-    });
+    //     responsive: {
+    //         rules: [{
+    //             condition: {
+    //                 maxWidth: 500
+    //             },
+    //             chartOptions: {
+    //                 legend: {
+    //                     layout: 'horizontal',
+    //                     align: 'center',
+    //                     verticalAlign: 'bottom'
+    //                 }
+    //             }
+    //         }]
+    //     }
+    // });
     // Chart Pie Total Data Mitra
     Highcharts.chart('chart_mitra_pie', {
         chart: {

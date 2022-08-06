@@ -28,7 +28,7 @@ if (isset($_POST["add_nppbkc"])) {
     $IDUNIQme             = $resultme['USRIDUNIQ'];
     $InputUsername        = $me;
     $InputModul           = 'Referensi/Perusahaan';
-    $InputDescription     = $me . " Update Data: " .  $UpdateNameDepartment .", Simpan Data Sebagai Log Referensi Perusahaan";
+    $InputDescription     = $me . " Update Data: " .  $UpdateNameDepartment . ", Simpan Data Sebagai Log Referensi Perusahaan";
     $InputAction          = 'Update';
     $InputDate            = date('Y-m-d h:m:i');
 
@@ -102,7 +102,7 @@ if (isset($_POST["add_nppbkc"])) {
                                     $no = 0;
                                     while ($row = mysqli_fetch_array($dataTable)) {
                                         $no++;
-                                        ?>
+                                ?>
                                         <tr class="odd gradeX">
                                             <td width="1%" class="f-s-600 text-inverse"><?= $no ?>.</td>
                                             <td style="text-align: left;">
@@ -134,10 +134,14 @@ if (isset($_POST["add_nppbkc"])) {
                                                 <?php } ?>
                                             </td>
                                             <td style="text-align: center;">
-                                                <?php if ($row['NPPBKC'] == NULL || $row['NPPBKC'] == '') { ?>
-                                                    <a href="#AddNPPBKC<?= $row['ID'] ?>" class="btn btn-sm btn-warning" data-toggle="modal" title="Tambah NPPBKC"><i class="fas fa-plus-circle"></i> NPPBKC</a>
+                                                <?php if ($resultForPrivileges['UPDATE_DATA'] == 'Y') { ?>
+                                                    <?php if ($row['NPPBKC'] == NULL || $row['NPPBKC'] == '') { ?>
+                                                        <a href="#AddNPPBKC<?= $row['ID'] ?>" class="btn btn-sm btn-warning" data-toggle="modal" title="Tambah NPPBKC"><i class="fas fa-plus-circle"></i> NPPBKC</a>
+                                                    <?php } else { ?>
+                                                        <?= $row['NPPBKC'] ?>
+                                                    <?php } ?>
                                                 <?php } else { ?>
-                                                    <?= $row['NPPBKC'] ?>
+                                                    <font style="font-size: 8px;font-weight: 600;color: red"><i>Tidak ada akses!</i></font>
                                                 <?php } ?>
                                             </td>
                                             <td style="text-align: left;">
@@ -263,9 +267,9 @@ if (isset($_POST["add_nppbkc"])) {
 <script type="text/javascript">
     // NO KK
     var numberMask = IMask(
-    document.getElementById('IDNPPBKC'), {
-        mask: '0000.000000',
-    });
+        document.getElementById('IDNPPBKC'), {
+            mask: '0000.000000',
+        });
 
     // UPDATE SUCCESS
     if (window?.location?.href?.indexOf('UpdateSuccess') > -1) {
