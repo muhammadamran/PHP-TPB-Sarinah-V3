@@ -103,7 +103,7 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                         </div>
                         <?php
                         $userDevice = $_SESSION['username'];
-                        $dataSetDevice = $dbcon->query("SELECT log_agent FROM tbl_log WHERE log_username='$userDevice' ORDER BY id DESC LIMIT 1");
+                        $dataSetDevice = $dbcon->query("SELECT * FROM tbl_log WHERE log_username='$userDevice' ORDER BY id DESC LIMIT 1");
                         $resultSetDevice = mysqli_fetch_array($dataSetDevice);
                         ?>
                         <!-- Device Sign In -->
@@ -115,32 +115,38 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                                             <div class="mb-3 text-grey">
                                                 <b>Informasi Perangkat anda:</b>
                                                 <span class="ml-2">
-                                                    <i class="fa fa-info-circle" data-toggle="popover" data-trigger="hover" data-title="Total sales" data-placement="top" data-content="Net sales (gross sales minus discounts and returns) plus taxes and shipping. Includes orders from all sales channels."></i>
+                                                    <i class="fa fa-info-circle" data-toggle="popover" data-trigger="hover" data-title="Informasi Perangkat anda:" data-placement="top" data-content="Perangkat yang digunakan, IP Address, Browser akses, Sign In Time dan Status"></i>
                                                 </span>
                                             </div>
                                             <div class="d-flex mb-1">
-                                                <h2 class="mb-0">$<span data-animation="number" data-value="64559.25">0.00</span></h2>
+                                                <?php if ($resultSetDevice['log_agent'] == 'Desktop') { ?>
+                                                    <h2 class="mb-0">Akses Desktop</span></h2>
+                                                <?php } else if ($resultSetDevice['log_agent'] == 'Mobile') { ?>
+                                                    <h2 class="mb-0">Akses Mobile</span></h2>
+                                                <?php } else { ?>
+                                                    <h2 class="mb-0">Tidak dikenali!</span></h2>
+                                                <?php } ?>
                                                 <div class="ml-auto mt-n1 mb-n1"><div id="total-sales-sparkline"></div></div>
                                             </div>
                                             <div class="mb-3 text-grey">
-                                                <i class="fa fa-caret-up"></i> <span data-animation="number" data-value="33.21">0.00</span>% compare to last week
+                                                <i class="fa fa-clock"></i> Sign In: <?= date_indo(SUBSTR($resultSetDevice['log_date'],0,10), TRUE); ?>
                                             </div>
                                             <hr class="bg-white-transparent-2" />
                                             <div class="row text-truncate">
                                                 <!-- begin col-6 -->
                                                 <div class="col-6">
-                                                    <div class="f-s-12 text-grey">Total sales order</div>
-                                                    <div class="f-s-18 m-b-5 f-w-600 p-b-1" data-animation="number" data-value="1568">0</div>
-                                                    <div class="progress progress-xs rounded-lg bg-dark-darker m-b-5">
+                                                    <div class="f-s-12 text-grey">IP Address:</div>
+                                                    <div class="f-s-18 m-b-5 f-w-600 p-b-1" data-animation="number" data-value="<?= $resultSetDevice['log_ip']; ?>"><?= $resultSetDevice['log_ip']; ?></div>
+                                                    <!-- <div class="progress progress-xs rounded-lg bg-dark-darker m-b-5">
                                                         <div class="progress-bar progress-bar-striped rounded-right bg-teal" data-animation="width" data-value="55%" style="width: 0%"></div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                                 <div class="col-6">
-                                                    <div class="f-s-12 text-grey">Avg. sales per order</div>
-                                                    <div class="f-s-18 m-b-5 f-w-600 p-b-1">$<span data-animation="number" data-value="41.20">0.00</span></div>
-                                                    <div class="progress progress-xs rounded-lg bg-dark-darker m-b-5">
+                                                    <div class="f-s-12 text-grey">Browser:</div>
+                                                    <div class="f-s-18 m-b-5 f-w-600 p-b-1"><span data-animation="number" data-value="<?= $resultSetDevice['log_browser']; ?>"><?= $resultSetDevice['log_browser']; ?></span></div>
+                                                    <!-- <div class="progress progress-xs rounded-lg bg-dark-darker m-b-5">
                                                         <div class="progress-bar progress-bar-striped rounded-right" data-animation="width" data-value="55%" style="width: 0%"></div>
-                                                    </div>
+                                                    </div> -->
                                                 </div>
                                             </div>
                                         </div>

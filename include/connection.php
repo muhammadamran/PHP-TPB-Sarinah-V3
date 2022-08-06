@@ -13,7 +13,7 @@ $dbhost='localhost';
 $dbusername='inxmiles_tpb';
 $dbpassword='Flatrone2241TPB';
 $dbname='inxmiles_tpb';
-$dbcon = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname) or die(mysqli_connect_errno());
+$dbcon = new mysqli($dbhost, $dbusername, $dbpassword, $dbname, $dbport) or die(mysqli_connect_errno());
 
 // Hellos ID Dev
 // $dbhost='localhost';
