@@ -25,34 +25,34 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
 <!-- begin #content -->
 <!-- <div id="content" class="content"> -->
 <div id="content" class="nav-top-content">
-	<div class="page-title-css">
-		<div>
-			<h1 class="page-header-css">
-				<i class="fas fa-chart-pie icon-page"></i>
-				<font class="text-page">Dashboard - Summary</font>
-			</h1>
-			<ol class="breadcrumb">
-				<li class="breadcrumb-item active">Perusahaan: <?= $resultSetting['company']  ?></li>
-			</ol>
-		</div>
-		<div>
-			<button class="btn btn-primary-css"><i class="fas fa-calendar-alt"></i> <span id=""><?= date_indo(date('Y-m-d'), TRUE) ?> - <font style="text-transform: uppercase;"><?= date('h:m:i a') ?></font></span></button>
-		</div>
-	</div>
-	<div class="line-page"></div>
-	<!-- Tab -->
+    <div class="page-title-css">
+        <div>
+            <h1 class="page-header-css">
+                <i class="fas fa-chart-pie icon-page"></i>
+                <font class="text-page">Dashboard - Summary</font>
+            </h1>
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item active">Perusahaan: <?= $resultSetting['company']  ?></li>
+            </ol>
+        </div>
+        <div>
+            <button class="btn btn-primary-css"><i class="fas fa-calendar-alt"></i> <span id=""><?= date_indo(date('Y-m-d'), TRUE) ?> - <font style="text-transform: uppercase;"><?= date('h:m:i a') ?></font></span></button>
+        </div>
+    </div>
+    <div class="line-page"></div>
+    <!-- Tab -->
     <div class="row">
     </div>
-	<div class="row">
-		<div class="col-xl-12">
-			<ul class="nav nav-pills mb-2">
-				<li class="nav-item">
-					<a href="index_dashboard.php" class="nav-link active">
-						<span class="d-sm-none">Main</span>
-						<span class="d-sm-block d-none">Main</span>
-					</a>
-				</li>
-				<!-- <li class="nav-item">
+    <div class="row">
+        <div class="col-xl-12">
+            <ul class="nav nav-pills mb-2">
+                <li class="nav-item">
+                    <a href="index_dashboard.php" class="nav-link active">
+                        <span class="d-sm-none">Main</span>
+                        <span class="d-sm-block d-none">Main</span>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
 					<a href="index_dashboard_one.php" class="nav-link">
 						<span class="d-sm-none">Dokumen Pabean</span>
 						<span class="d-sm-block d-none">Dokumen Pabean</span>
@@ -94,12 +94,15 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
 						<span class="d-sm-block d-none">Administrator</span>
 					</a>
 				</li> -->
-			</ul>
-			<div class="tab-content mb-4">
-				<div class="tab-pane fade active show" id="tab-main">
-					<!-- Line 1 -->
-					<div class="row">
-                        <div class="col-xl-8">
+            </ul>
+            <div class="tab-content mb-4">
+                <div class="tab-pane fade active show" id="tab-main">
+                    <!-- Line 1 -->
+                    <div class="row">
+                        <div class="col-xl-4">
+                        </div>
+                        <div class="col-xl-4">
+                            <div id="table_pengguna_sedang_aktif"></div>
                         </div>
                         <?php
                         $userDevice = $_SESSION['username'];
@@ -126,10 +129,12 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                                                 <?php } else { ?>
                                                     <h2 class="mb-0">Tidak dikenali!</span></h2>
                                                 <?php } ?>
-                                                <div class="ml-auto mt-n1 mb-n1"><div id="total-sales-sparkline"></div></div>
+                                                <div class="ml-auto mt-n1 mb-n1">
+                                                    <div id="total-sales-sparkline"></div>
+                                                </div>
                                             </div>
                                             <div class="mb-3 text-grey">
-                                                <i class="fa fa-clock"></i> Sign In: <?= date_indo(SUBSTR($resultSetDevice['log_date'],0,10), TRUE); ?>
+                                                <i class="fa fa-clock"></i> Sign In: <?= date_indo(SUBSTR($resultSetDevice['log_date'], 0, 10), TRUE); ?>
                                             </div>
                                             <hr class="bg-white-transparent-2" />
                                             <div class="row text-truncate">
@@ -164,96 +169,96 @@ $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCou
                             </div>
                         </div>
                         <!-- End Device Sign In -->
-						<!-- Dashboard Mitra -->
-						<div class="col-xl-8">
-							<div class="panel panel-inverse" id="data-mitra-chart">
-								<!-- begin panel-heading -->
-								<div class="panel-heading">
-									<h4 class="panel-title"><i class="fas fa-chart-line"></i> Data Mitra TPBERP <?= $resultSetting['company']  ?></h4>
-									<?php include "include/panel-row.php"; ?>
-								</div>
-								<div class="panel-body">
-									<div class="row">
-										<div class="col-xl-8">
-											<div id="chart_mitra_line"></div>
-										</div>
-										<div class="col-xl-4">
-											<div id="chart_mitra_pie"></div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- End Dashboard Mitra -->
-						<!-- Nama Pengangkut -->
-						<div class="col-xl-4">
-							<div class="panel panel-inverse">
-								<!-- begin panel-heading -->
-								<div class="panel-heading">
-									<h4 class="panel-title"><i class="far fa-chart-bar"></i> Pengangkut <?= $alertAppName ?></h4>
-									<?php include "include/panel-row.php"; ?>
-								</div>
-								<div class="panel-body">
-									<div id="chart_pengangkut_bar"></div>
-								</div>
-							</div>
-						</div>
-						<!-- End Nama Pengangkut -->
-						<!-- Valuta -->
-						<div class="col-xl-4">
-							<div class="panel panel-inverse">
-								<!-- begin panel-heading -->
-								<div class="panel-heading">
-									<h4 class="panel-title"><i class="fas fa-chart-pie"></i> Valuta <?= $alertAppName ?></h4>
-									<?php include "include/panel-row.php"; ?>
-								</div>
-								<div class="panel-body">
-									<div id="chart_valuta_pie"></div>
-								</div>
-							</div>
-						</div>
-						<!-- End Valuta -->
-						<!-- Kantor Tujuan -->
-						<div class="col-xl-4">
-							<div class="panel panel-inverse">
-								<!-- begin panel-heading -->
-								<div class="panel-heading">
-									<h4 class="panel-title"><i class="far fa-chart-bar"></i> Kantor Tujuan <?= $alertAppName ?></h4>
-									<?php include "include/panel-row.php"; ?>
-								</div>
-								<div class="panel-body">
-									<div id="chart_kantor_tujuan_pie"></div>
-								</div>
-							</div>
-						</div>
-						<!-- End Kantor Tujuan -->
-						<!-- Jumlah Netto Per Tahun Aju -->
-						<div class="col-xl-4">
-							<div class="panel panel-inverse">
-								<!-- begin panel-heading -->
-								<div class="panel-heading">
-									<h4 class="panel-title"><i class="far fa-chart-bar"></i> Jumlah Netto Per Tahun Aju <?= $alertAppName ?></h4>
-									<?php include "include/panel-row.php"; ?>
-								</div>
-								<div class="panel-body">
-									<div id="chart_netto_line"></div>
-								</div>
-							</div>
-						</div>
-						<!-- End Jumlah Netto Per Tahun Aju -->
-					</div>
-					<!-- End Line 1 -->
-					<!-- Data Pengguna All -->
-					<div id="data-pengguna-all"></div>
+                        <!-- Dashboard Mitra -->
+                        <div class="col-xl-8">
+                            <div class="panel panel-inverse" id="data-mitra-chart">
+                                <!-- begin panel-heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="fas fa-chart-line"></i> Data Mitra TPBERP <?= $resultSetting['company']  ?></h4>
+                                    <?php include "include/panel-row.php"; ?>
+                                </div>
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-xl-8">
+                                            <div id="chart_mitra_line"></div>
+                                        </div>
+                                        <div class="col-xl-4">
+                                            <div id="chart_mitra_pie"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Dashboard Mitra -->
+                        <!-- Nama Pengangkut -->
+                        <div class="col-xl-4">
+                            <div class="panel panel-inverse">
+                                <!-- begin panel-heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Pengangkut <?= $alertAppName ?></h4>
+                                    <?php include "include/panel-row.php"; ?>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chart_pengangkut_bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Nama Pengangkut -->
+                        <!-- Valuta -->
+                        <div class="col-xl-4">
+                            <div class="panel panel-inverse">
+                                <!-- begin panel-heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="fas fa-chart-pie"></i> Valuta <?= $alertAppName ?></h4>
+                                    <?php include "include/panel-row.php"; ?>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chart_valuta_pie"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Valuta -->
+                        <!-- Kantor Tujuan -->
+                        <div class="col-xl-4">
+                            <div class="panel panel-inverse">
+                                <!-- begin panel-heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Kantor Tujuan <?= $alertAppName ?></h4>
+                                    <?php include "include/panel-row.php"; ?>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chart_kantor_tujuan_pie"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Kantor Tujuan -->
+                        <!-- Jumlah Netto Per Tahun Aju -->
+                        <div class="col-xl-4">
+                            <div class="panel panel-inverse">
+                                <!-- begin panel-heading -->
+                                <div class="panel-heading">
+                                    <h4 class="panel-title"><i class="far fa-chart-bar"></i> Jumlah Netto Per Tahun Aju <?= $alertAppName ?></h4>
+                                    <?php include "include/panel-row.php"; ?>
+                                </div>
+                                <div class="panel-body">
+                                    <div id="chart_netto_line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Jumlah Netto Per Tahun Aju -->
+                    </div>
+                    <!-- End Line 1 -->
+                    <!-- Data Pengguna All -->
+                    <div id="data-pengguna-all"></div>
                     <!-- End Data Pengguna All -->
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Tab -->
-	<?php include "include/creator.php"; ?>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Tab -->
+    <?php include "include/creator.php"; ?>
 </div>
-<?php 
+<?php
 include "include/footer.php";
 include "include/jsDatatables.php";
 ?>
@@ -262,40 +267,58 @@ include "include/jsDatatables.php";
 <script src="assets/highcharts/modules/export-data.js"></script>
 <script src="assets/highcharts/modules/accessibility.js"></script>
 <script type="text/javascript">
-	// UPDATE PASSWORD SUCCESS
-	if (window?.location?.href?.indexOf('SUpdatePasswordSuccessCC') > -1) {
-		Swal.fire({
-			title: 'Password berhasil diupdate!',
-			icon: 'success',
-			text: 'Password berhasil diupdate didalam <?= $alertAppName ?>!'
-		})
-		history.replaceState({}, '', './index.php');
-	}
+    // UPDATE PASSWORD SUCCESS
+    if (window?.location?.href?.indexOf('SUpdatePasswordSuccessCC') > -1) {
+        Swal.fire({
+            title: 'Password berhasil diupdate!',
+            icon: 'success',
+            text: 'Password berhasil diupdate didalam <?= $alertAppName ?>!'
+        })
+        history.replaceState({}, '', './index.php');
+    }
 
-	// REALTIME DATA LOAD
-	// Pengguna All
-	function RealTimePenggunaAll() {
-		var xhttp = new XMLHttpRequest();
-		xhttp.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				document.getElementById("data-pengguna-all").innerHTML =
-				this.responseText;
-			}
-		};
-		xhttp.open("GET", "realtime/index_pengguna_all.php", true);
-		xhttp.send();
-	}
-	setInterval(function() {
-		RealTimePenggunaAll();
-		// Time
-	}, 1000);
-	window.onload = RealTimePenggunaAll;
-	// END REALTIME DATA LOAD
+    // REALTIME DATA LOAD
+    // Pengguna Sedang Aktif
+    function RealTimePenggunaSedangAktif() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("table_pengguna_sedang_aktif").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "realtime/index_pengguna_sedang_aktif.php", true);
+        xhttp.send();
+    }
+    setInterval(function() {
+        RealTimePenggunaSedangAktif();
+        // Time
+    }, 50000);
+    window.onload = RealTimePenggunaSedangAktif;
+
+    // Pengguna All
+    function RealTimePenggunaAll() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("data-pengguna-all").innerHTML =
+                    this.responseText;
+            }
+        };
+        xhttp.open("GET", "realtime/index_pengguna_all.php", true);
+        xhttp.send();
+    }
+    setInterval(function() {
+        RealTimePenggunaAll();
+        // Time
+    }, 1000);
+    window.onload = RealTimePenggunaAll;
+    // END REALTIME DATA LOAD
 </script>
 <!-- ================== BEGIN PAGE LEVEL JS ================== -->
 <script type="text/javascript">
-	// Chart Line Progress Mitra
-	Highcharts.chart('chart_mitra_line', {
+    // Chart Line Progress Mitra
+    Highcharts.chart('chart_mitra_line', {
         title: {
             text: 'Aktifitas Mitra <?= $resultSetting['company']  ?>'
         },
@@ -456,23 +479,23 @@ include "include/jsDatatables.php";
         series: [{
             name: 'Nama Angkutan',
             data: [
-            <?php
-            $DataChartPengangkutPie = $dbcon->query("SELECT NAMA_PENGANGKUT,COUNT(NAMA_PENGANGKUT) AS total_pengangkut FROM tpb_header GROUP BY NAMA_PENGANGKUT");
-            while ($rowDataChartPengangkutPie = mysqli_fetch_array($DataChartPengangkutPie)) {
-            $NamaKodePengangkut = $rowDataChartPengangkutPie['NAMA_PENGANGKUT'];
-            ?>
-            // IF Nama Pengangkut NULL
-            <?php if ($NamaKodePengangkut == NULL) {
-                $DNamaKodePengangkut = 'Data NULL';
-            } else if ($NamaKodePengangkut == '') {
-                $DNamaKodePengangkut = 'Tidak Diketahui';
-            } else {
-                $DNamaKodePengangkut = $NamaKodePengangkut;
-            }
-            ?>
-            // End IF Nama Pengangkut NULL
-            ['<?= $DNamaKodePengangkut ?>', <?= $rowDataChartPengangkutPie['total_pengangkut']; ?>],
-            <?php } ?>
+                <?php
+                $DataChartPengangkutPie = $dbcon->query("SELECT NAMA_PENGANGKUT,COUNT(NAMA_PENGANGKUT) AS total_pengangkut FROM tpb_header GROUP BY NAMA_PENGANGKUT");
+                while ($rowDataChartPengangkutPie = mysqli_fetch_array($DataChartPengangkutPie)) {
+                    $NamaKodePengangkut = $rowDataChartPengangkutPie['NAMA_PENGANGKUT'];
+                ?>
+                    // IF Nama Pengangkut NULL
+                    <?php if ($NamaKodePengangkut == NULL) {
+                        $DNamaKodePengangkut = 'Data NULL';
+                    } else if ($NamaKodePengangkut == '') {
+                        $DNamaKodePengangkut = 'Tidak Diketahui';
+                    } else {
+                        $DNamaKodePengangkut = $NamaKodePengangkut;
+                    }
+                    ?>
+                    // End IF Nama Pengangkut NULL
+                    ['<?= $DNamaKodePengangkut ?>', <?= $rowDataChartPengangkutPie['total_pengangkut']; ?>],
+                <?php } ?>
             ],
             dataLabels: {
                 enabled: true,
@@ -523,32 +546,30 @@ include "include/jsDatatables.php";
         series: [{
             name: 'Total Valuta',
             colorByPoint: true,
-            data: 
-            [
-            <?php
-            $DataChartValutaPie = $dbcon->query("SELECT KODE_VALUTA, COUNT(KODE_VALUTA) AS total_per_valuta FROM tpb_header GROUP BY KODE_VALUTA");
-            while ($rowDataChartValutaPie = mysqli_fetch_array($DataChartValutaPie)) {
-            $NamaKodeValuta = $rowDataChartValutaPie['KODE_VALUTA'];
-            ?>
-            {	
-            	// IF Valuta NULL 
-            	<?php if ($NamaKodeValuta == NULL) {
-            		$DNamaKodeValuta = 'Data NULL';
-            	} else if ($NamaKodeValuta == '') {
-            		$DNamaKodeValuta = 'Tidak Diketahui';
-            	} else {
-            		$DNamaKodeValuta = $NamaKodeValuta;
-            	}
-            	?>
-            	// End IF Valuta NULL 
-                name: '<?= $DNamaKodeValuta; ?>',
-                y: <?= $rowDataChartValutaPie['total_per_valuta']; ?>
-            },
-            <?php } ?>
+            data: [
+                <?php
+                $DataChartValutaPie = $dbcon->query("SELECT KODE_VALUTA, COUNT(KODE_VALUTA) AS total_per_valuta FROM tpb_header GROUP BY KODE_VALUTA");
+                while ($rowDataChartValutaPie = mysqli_fetch_array($DataChartValutaPie)) {
+                    $NamaKodeValuta = $rowDataChartValutaPie['KODE_VALUTA'];
+                ?> {
+                        // IF Valuta NULL 
+                        <?php if ($NamaKodeValuta == NULL) {
+                            $DNamaKodeValuta = 'Data NULL';
+                        } else if ($NamaKodeValuta == '') {
+                            $DNamaKodeValuta = 'Tidak Diketahui';
+                        } else {
+                            $DNamaKodeValuta = $NamaKodeValuta;
+                        }
+                        ?>
+                        // End IF Valuta NULL 
+                        name: '<?= $DNamaKodeValuta; ?>',
+                            y: <?= $rowDataChartValutaPie['total_per_valuta']; ?>
+                    },
+                <?php } ?>
             ]
         }]
     });
-	// KODE KANTOR TUJUAN
+    // KODE KANTOR TUJUAN
     Highcharts.chart('chart_kantor_tujuan_pie', {
         chart: {
             plotBackgroundColor: null,
@@ -583,32 +604,30 @@ include "include/jsDatatables.php";
         series: [{
             name: 'Total Kantor Tujuan',
             colorByPoint: true,
-            data: 
-            [
-            <?php
-            $DataChartkantorPie = $dbcon->query("SELECT a.KODE_KANTOR_TUJUAN,b.URAIAN_KANTOR,COUNT(a.KODE_KANTOR_TUJUAN) AS total_per_kantor,a.KODE_JENIS_TPB,c.URAIAN_JENIS_TPB
+            data: [
+                <?php
+                $DataChartkantorPie = $dbcon->query("SELECT a.KODE_KANTOR_TUJUAN,b.URAIAN_KANTOR,COUNT(a.KODE_KANTOR_TUJUAN) AS total_per_kantor,a.KODE_JENIS_TPB,c.URAIAN_JENIS_TPB
                                                 FROM tpb_header AS a 
                                                 LEFT OUTER JOIN referensi_kantor_pabean AS b ON a.KODE_KANTOR_TUJUAN=b.KODE_KANTOR
                                                 LEFT OUTER JOIN referensi_jenis_tpb AS c ON a.KODE_JENIS_TPB=c.KODE_JENIS_TPB
                                                 GROUP BY a.KODE_KANTOR_TUJUAN");
-            while ($rowDataChartkantorPie = mysqli_fetch_array($DataChartkantorPie)) {
-            $NamaKodekantor = $rowDataChartkantorPie['URAIAN_KANTOR'];
-            ?>
-            {   
-                // IF kantor NULL 
-                <?php if ($NamaKodekantor == NULL) {
-                    $DNamaKodekantor = 'Data NULL';
-                } else if ($NamaKodekantor == '') {
-                    $DNamaKodekantor = 'Tidak Diketahui';
-                } else {
-                    $DNamaKodekantor = $NamaKodekantor;
-                }
-                ?>
-                // End IF kantor NULL 
-                name: '<?= $DNamaKodekantor; ?>',
-                y: <?= $rowDataChartkantorPie['total_per_kantor']; ?>
-            },
-            <?php } ?>
+                while ($rowDataChartkantorPie = mysqli_fetch_array($DataChartkantorPie)) {
+                    $NamaKodekantor = $rowDataChartkantorPie['URAIAN_KANTOR'];
+                ?> {
+                        // IF kantor NULL 
+                        <?php if ($NamaKodekantor == NULL) {
+                            $DNamaKodekantor = 'Data NULL';
+                        } else if ($NamaKodekantor == '') {
+                            $DNamaKodekantor = 'Tidak Diketahui';
+                        } else {
+                            $DNamaKodekantor = $NamaKodekantor;
+                        }
+                        ?>
+                        // End IF kantor NULL 
+                        name: '<?= $DNamaKodekantor; ?>',
+                            y: <?= $rowDataChartkantorPie['total_per_kantor']; ?>
+                    },
+                <?php } ?>
             ]
         }]
     });
@@ -647,30 +666,28 @@ include "include/jsDatatables.php";
         series: [{
             name: 'Total Netto',
             colorByPoint: true,
-            data: 
-            [
-            <?php
-            $DataChartNettoPie = $dbcon->query("SELECT a.ID_PENERIMA_BARANG,b.NAMA,SUM(a.NETTO) AS total_netto,LEFT(a.TANGGAL_AJU,4) AS tahun_aju FROM tpb_header AS a 
+            data: [
+                <?php
+                $DataChartNettoPie = $dbcon->query("SELECT a.ID_PENERIMA_BARANG,b.NAMA,SUM(a.NETTO) AS total_netto,LEFT(a.TANGGAL_AJU,4) AS tahun_aju FROM tpb_header AS a 
 												LEFT OUTER JOIN referensi_pengusaha AS b ON a.ID_PENERIMA_BARANG=b.NPWP
 												GROUP BY tahun_aju");
-            while ($rowDataChartNettoPie = mysqli_fetch_array($DataChartNettoPie)) {
-            $NamaKodeNetto = $rowDataChartNettoPie['NAMA'];
-            ?>
-            {	
-            	// IF Netto NULL 
-            	<?php if ($NamaKodeNetto == NULL) {
-            		$DNamaKodeNetto = 'Data NULL';
-            	} else if ($NamaKodeNetto == '') {
-            		$DNamaKodeNetto = 'Tidak Diketahui';
-            	} else {
-            		$DNamaKodeNetto = $NamaKodeNetto;
-            	}
-            	?>
-            	// End IF Netto NULL 
-                name: '<?= $DNamaKodeNetto; ?>',
-                y: <?= $rowDataChartNettoPie['total_netto']; ?>
-            },
-            <?php } ?>
+                while ($rowDataChartNettoPie = mysqli_fetch_array($DataChartNettoPie)) {
+                    $NamaKodeNetto = $rowDataChartNettoPie['NAMA'];
+                ?> {
+                        // IF Netto NULL 
+                        <?php if ($NamaKodeNetto == NULL) {
+                            $DNamaKodeNetto = 'Data NULL';
+                        } else if ($NamaKodeNetto == '') {
+                            $DNamaKodeNetto = 'Tidak Diketahui';
+                        } else {
+                            $DNamaKodeNetto = $NamaKodeNetto;
+                        }
+                        ?>
+                        // End IF Netto NULL 
+                        name: '<?= $DNamaKodeNetto; ?>',
+                            y: <?= $rowDataChartNettoPie['total_netto']; ?>
+                    },
+                <?php } ?>
             ]
         }]
     });
