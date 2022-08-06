@@ -1,0 +1,781 @@
+[16-Jul-2022 19:27:22 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[17-Jul-2022 02:30:40 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function http_redirect() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 10
+[17-Jul-2022 02:30:41 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function http_redirect() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 10
+[17-Jul-2022 02:46:18 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:18 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:20 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:20 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:25 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:25 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:55 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:46:55 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:17 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:31 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:31 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:47 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:48:47 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:50:50 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:50:50 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:50:54 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:50:54 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:51:06 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 19:51:06 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:40 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:40 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:41 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:41 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:47 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:47 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:58 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:59 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:51:59 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:13 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:13 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:14 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:14 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:19 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:19 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:20 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:20 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:25 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:25 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:36 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:36 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:43 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:43 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:49 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:52:49 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:55:30 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 52
+[17-Jul-2022 02:55:32 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 52
+[17-Jul-2022 02:55:37 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:52
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 52
+[17-Jul-2022 02:59:28 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:58
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 58
+[17-Jul-2022 02:59:54 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 02:59:54 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:01:27 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:01:27 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:02:52 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:02:52 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:16 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:16 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:17 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:17 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:22 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:22 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:52 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:05:52 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:47 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:47 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:53 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:53 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:55 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:06:55 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:00 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:00 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:11 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:11 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:18 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:18 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:20 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:20 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:25 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:25 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:59 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:07:59 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:08:59 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:08:59 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:46 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:46 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:47 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:47 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:52 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:10:52 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:11:23 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:11:23 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:11:27 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:11:27 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:12:21 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:12:21 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:15:56 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:15:56 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:15:57 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:15:57 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:01 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:01 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:02 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:02 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:08 Asia/Bangkok] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[17-Jul-2022 03:16:08 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(7): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 20:16:24 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 20:16:24 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(2): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 20:16:45 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 20:16:45 UTC] PHP Fatal error:  Uncaught Error: Call to a member function query() on null in /home/k8794920/public_html/dev/tpb/include/head.php:3
+Stack trace:
+#0 /home/k8794920/public_html/dev/tpb/export/excel_log_system.php(2): include()
+#1 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/include/head.php on line 3
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/restrict.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/alert.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/top-header.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/top-sidebar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:12 UTC] PHP Warning:  include(): Failed opening 'include/cssDatatables.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:12 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(..include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(..include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening '..include/connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/restrict.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/alert.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/top-header.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/top-sidebar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:22 UTC] PHP Warning:  include(): Failed opening 'include/cssDatatables.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(..include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(..include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening '..include/connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 2
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/restrict.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/alert.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/top-header.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/top-sidebar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:38 UTC] PHP Warning:  include(): Failed opening 'include/cssDatatables.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:38 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/restrict.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/alert.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/top-header.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/top-sidebar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:47 UTC] PHP Warning:  include(): Failed opening 'include/cssDatatables.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:47 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/restrict.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/restrict.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 3
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/head.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/head.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 4
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/alert.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/alert.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 5
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/top-header.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/top-header.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 6
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/top-sidebar.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/top-sidebar.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 7
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(include/cssDatatables.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:59 UTC] PHP Warning:  include(): Failed opening 'include/cssDatatables.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 9
+[16-Jul-2022 20:17:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:19:14 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function date_indo() in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php:34
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 34
+[16-Jul-2022 20:19:19 UTC] PHP Notice:  Undefined variable: resultSetting in /home/k8794920/public_html/dev/tpb/include/creator.php on line 8
+[16-Jul-2022 20:21:03 UTC] PHP Notice:  Undefined variable: resultSetting in /home/k8794920/public_html/dev/tpb/include/creator.php on line 8
+[16-Jul-2022 20:21:18 UTC] PHP Notice:  Undefined variable: resultSetting in /home/k8794920/public_html/dev/tpb/include/creator.php on line 8
+[17-Jul-2022 03:21:39 Asia/Bangkok] PHP Notice:  Undefined variable: resultSetting in /home/k8794920/public_html/dev/tpb/include/creator.php on line 8
+[17-Jul-2022 03:24:12 Asia/Bangkok] PHP Notice:  Undefined variable: dataTable in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[17-Jul-2022 03:24:12 Asia/Bangkok] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:25:36 UTC] PHP Notice:  Undefined variable: dataTable in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:25:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:26:03 UTC] PHP Warning:  include(../../include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:03 UTC] PHP Warning:  include(../../include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:03 UTC] PHP Warning:  include(): Failed opening '../../include/connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:03 UTC] PHP Notice:  Undefined variable: dataTable in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:26:03 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:26:03 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 112
+[16-Jul-2022 20:26:03 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 112
+[16-Jul-2022 20:26:09 UTC] PHP Warning:  include(include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:09 UTC] PHP Warning:  include(include/connection.php): failed to open stream: No such file or directory in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:09 UTC] PHP Warning:  include(): Failed opening 'include/connection.php' for inclusion (include_path='.:/opt/alt/php73/usr/share/pear') in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 45
+[16-Jul-2022 20:26:09 UTC] PHP Notice:  Undefined variable: dataTable in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:26:09 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 87
+[16-Jul-2022 20:26:09 UTC] PHP Notice:  Undefined variable: dbcon in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 112
+[16-Jul-2022 20:26:09 UTC] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 112
+[17-Jul-2022 05:07:18 UTC] PHP Notice:  Undefined variable: resultme in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 10
+[17-Jul-2022 05:07:18 UTC] PHP Notice:  Undefined variable: me in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 11
+[17-Jul-2022 05:07:18 UTC] PHP Notice:  Undefined variable: me in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 13
+[17-Jul-2022 05:08:19 UTC] PHP Notice:  Undefined variable: resultme in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 10
+[17-Jul-2022 05:08:19 UTC] PHP Notice:  Undefined variable: me in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 11
+[17-Jul-2022 05:08:19 UTC] PHP Notice:  Undefined variable: me in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 13
+[17-Jul-2022 05:09:18 UTC] PHP Notice:  Undefined variable: resultme in /home/k8794920/public_html/dev/tpb/export/excel_log_system.php on line 13
+[17-Jul-2022 11:36:13 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:36:13 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:36:13 Asia/Bangkok] PHP Notice:  Undefined variable: WGetTahunAju in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 91
+[17-Jul-2022 18:36:13 Asia/Bangkok] PHP Notice:  Undefined variable: WGetTahunAju in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 94
+[17-Jul-2022 18:36:13 Asia/Bangkok] PHP Notice:  Undefined variable: WGetTahunAju in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 103
+[17-Jul-2022 11:39:00 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 11:39:00 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 18:39:00 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 135
+[17-Jul-2022 11:39:01 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 11:39:01 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 18:39:01 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 135
+[17-Jul-2022 11:39:06 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 11:39:06 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 18:39:06 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 135
+[17-Jul-2022 11:39:37 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 11:39:37 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 17
+[17-Jul-2022 18:39:37 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:135
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 135
+[17-Jul-2022 11:40:11 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:40:11 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:40:11 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 134
+[17-Jul-2022 11:41:06 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:41:06 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:41:06 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 134
+[17-Jul-2022 11:41:11 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:41:11 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:41:11 Asia/Bangkok] PHP Fatal error:  Uncaught Error: Call to undefined function decimal() in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php:134
+Stack trace:
+#0 {main}
+  thrown in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 134
+[17-Jul-2022 11:42:07 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:42:07 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 18:42:07 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 11:42:17 UTC] PHP Notice:  Undefined variable: startdate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 11:42:17 UTC] PHP Notice:  Undefined variable: enddate in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 16
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 18:42:17 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 18:51:57 Asia/Bangkok] PHP Notice:  Undefined variable: WGetNameMitra in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 112
+[17-Jul-2022 18:51:57 Asia/Bangkok] PHP Notice:  Undefined variable: WGetNameMitra in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 119
+[17-Jul-2022 18:51:57 Asia/Bangkok] PHP Notice:  Undefined variable: WGetNameMitra in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 196
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1992
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1993
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1994
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1995
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1996
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1997
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1999
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2000
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2002
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2003
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2004
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2005
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2006
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2007
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2008
+[17-Jul-2022 18:51:58 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2009
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1996
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1997
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1998
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1999
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2000
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2001
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2003
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2004
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2006
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2007
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2008
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2009
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2010
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2011
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2012
+[17-Jul-2022 18:53:41 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2003
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2004
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2005
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2006
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2007
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2008
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2010
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2011
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2013
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2014
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2015
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2016
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2017
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2018
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2019
+[17-Jul-2022 20:05:53 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_tahun.php on line 2020
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 1999
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2000
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2001
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2002
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2003
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2004
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2006
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Warning:  Division by zero in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2007
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2009
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_a in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2010
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2011
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_b in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2012
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2013
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_c in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2014
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_crt_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2015
+[27-Jul-2022 16:23:49 Asia/Bangkok] PHP Notice:  Undefined variable: bg_per_ltr_total in /home/k8794920/public_html/dev/tpb/export/excel_report_realisasi_per_mitra.php on line 2016
