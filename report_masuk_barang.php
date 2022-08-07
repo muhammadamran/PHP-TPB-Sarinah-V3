@@ -85,7 +85,7 @@ include "include/cssDatatables.php";
                                             <div class="modal-footer">
                                                 <a href="javascript:;" class="btn btn-white" data-dismiss="modal"><i class="fas fa-times-circle"></i> Tutup</a>
                                                 <button type="submit" name="find_TahunAju" class="btn btn-primary"><i class="fas fa-calendar-alt"></i> Cari Tanggal</button>
-                                                <!-- <a href="report_realisasi_per_tahun.php?TahunAju=<?= $_POST['TahunAju']?>" class="btn btn-primary"><i class="fas fa-search"></i> Cari</a> -->
+                                                <!-- <a href="report_realisasi_per_tahun.php?TahunAju=<?= $_POST['TahunAju'] ?>" class="btn btn-primary"><i class="fas fa-search"></i> Cari</a> -->
                                             </div>
                                         </form>
                                     </div>

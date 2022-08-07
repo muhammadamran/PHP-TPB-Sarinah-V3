@@ -21,7 +21,6 @@ $ResultDashboarddataMitraCountAnySKEP = mysqli_fetch_array($DashboardDataMitraCo
 $DashboardDataMitraCountNoSKEP = $dbcon->query("SELECT COUNT(*) AS dashboard_total_mitra_No_SKEP FROM referensi_pengusaha WHERE NOMOR_SKEP IS NULL");
 $ResultDashboarddataMitraCountNoSKEP = mysqli_fetch_array($DashboardDataMitraCountNoSKEP);
 ?>
-<!-- End Query For Mitra -->
 <!-- begin #content -->
 <!-- <div id="content" class="content"> -->
 <div id="content" class="nav-top-content">
@@ -347,86 +346,6 @@ include "include/jsDatatables.php";
 </script>
 <!-- ================== BEGIN PAGE LEVEL JS ================== -->
 <script type="text/javascript">
-    // Chart Line Progress Mitra
-    // Highcharts.chart('chart_mitra_line', {
-    //     title: {
-    //         text: 'Aktifitas Mitra <?= $resultSetting['company']  ?>'
-    //     },
-
-    //     subtitle: {
-    //         text: 'Update: <?= date_indo(date('Y-m-d')); ?>'
-    //     },
-
-    //     xAxis: {
-    //         categories: []
-    //     },
-
-    //     yAxis: {
-    //         title: {
-    //             text: 'Jumlah Biaya'
-    //         }
-    //     },
-
-    //     tooltip: {
-    //         crosshairs: true,
-    //         shared: true
-    //     },
-    //     plotOptions: {
-    //         line: {
-    //             dataLabels: {
-    //                 enabled: true
-    //             },
-    //             enableMouseTracking: true
-    //         }
-    //     },
-
-    //     series: [{
-    //         name: 'A',
-    //         marker: {
-    //             symbol: 'circle'
-    //         },
-    //         data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
-    //     }, {
-    //         name: 'B',
-    //         marker: {
-    //             symbol: 'circle'
-    //         },
-    //         data: [24916, 24064, 29742, 29851, 32490, 30282, 38121, 40434]
-    //     }, {
-    //         name: 'C',
-    //         marker: {
-    //             symbol: 'circle'
-    //         },
-    //         data: [11744, 17722, 16005, 19771, 20185, 24377, 32147, 39387]
-    //     }, {
-    //         name: 'C',
-    //         marker: {
-    //             symbol: 'circle'
-    //         },
-    //         data: [null, null, 7988, 12169, 15112, 22452, 34400, 34227]
-    //     }, {
-    //         name: 'D',
-    //         marker: {
-    //             symbol: 'circle'
-    //         },
-    //         data: [12908, 5948, 8105, 11248, 8989, 11816, 18274, 18111]
-    //     }],
-
-    //     responsive: {
-    //         rules: [{
-    //             condition: {
-    //                 maxWidth: 500
-    //             },
-    //             chartOptions: {
-    //                 legend: {
-    //                     layout: 'horizontal',
-    //                     align: 'center',
-    //                     verticalAlign: 'bottom'
-    //                 }
-    //             }
-    //         }]
-    //     }
-    // });
     // Chart Pie Total Data Mitra
     Highcharts.chart('chart_mitra_pie', {
         chart: {
