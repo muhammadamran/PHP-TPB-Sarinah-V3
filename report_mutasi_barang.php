@@ -90,19 +90,19 @@ if (isset($_POST['filter_date'])) {
                                                                     <?php } else { ?>
                                                                         <option value="">-- Pilih Bulan --</option>
                                                                     <?php } ?>
-                                                                    <option value="All">Semua Bulan</option>
-                                                                    <option value="Januari">Januari</option>
-                                                                    <option value="Februari">Februari</option>
-                                                                    <option value="Maret">Maret</option>
-                                                                    <option value="April">April</option>
-                                                                    <option value="Mei">Mei</option>
-                                                                    <option value="Juni">Juni</option>
-                                                                    <option value="Juli">Juli</option>
-                                                                    <option value="Agustus">Agustus</option>
-                                                                    <option value="September">September</option>
-                                                                    <option value="Oktober">Oktober</option>
-                                                                    <option value="November">November</option>
-                                                                    <option value="Desember">Desember</option>
+                                                                    <!-- <option value="All">Semua Bulan</option> -->
+                                                                    <option value="01">Januari</option>
+                                                                    <option value="02">Februari</option>
+                                                                    <option value="03">Maret</option>
+                                                                    <option value="04">April</option>
+                                                                    <option value="05">Mei</option>
+                                                                    <option value="06">Juni</option>
+                                                                    <option value="07">Juli</option>
+                                                                    <option value="08">Agustus</option>
+                                                                    <option value="09">September</option>
+                                                                    <option value="10">Oktober</option>
+                                                                    <option value="11">November</option>
+                                                                    <option value="12">Desember</option>
                                                                 </select>
                                                             </div>
                                                         </div>
@@ -169,7 +169,34 @@ if (isset($_POST['filter_date'])) {
                                 <font style="font-size: 24px;font-weight: 800;">LAPORAN PERTANGGUNGJAWABAN MUTASI BARANG</font>
                                 <font style="font-size: 24px;font-weight: 800;"><?= $resultHeadSetting['company'] ?></font>
                                 <?php if (isset($_POST['filter_date'])) { ?>
-                                    <font style="font-size: 14px;font-weight: 800;">Periode: <?= $StartTanggal ?> S.D <?= $EndTanggal ?></font>
+                                    <?php
+                                    if ($Month == '01') {
+                                        $DecMont = 'Januari';
+                                    } else if ($Month == '02') {
+                                        $DecMont = 'Februari';
+                                    } else if ($Month == '03') {
+                                        $DecMont = 'Maret';
+                                    } else if ($Month == '04') {
+                                        $DecMont = 'April';
+                                    } else if ($Month == '05') {
+                                        $DecMont = 'Mei';
+                                    } else if ($Month == '06') {
+                                        $DecMont = 'Juni';
+                                    } else if ($Month == '07') {
+                                        $DecMont = 'Juli';
+                                    } else if ($Month == '08') {
+                                        $DecMont = 'Agustus';
+                                    } else if ($Month == '09') {
+                                        $DecMont = 'September';
+                                    } else if ($Month == '10') {
+                                        $DecMont = 'Oktober';
+                                    } else if ($Month == '11') {
+                                        $DecMont = 'November';
+                                    } else if ($Month == '12') {
+                                        $DecMont = 'Desember';
+                                    }
+                                    ?>
+                                    <font style="font-size: 14px;font-weight: 800;">Periode: <?= $DecMont ?> / <?= $Year ?></font>
                                 <?php } ?>
                                 <div class="line-page-table"></div>
                                 <font style="font-size: 14px;font-weight: 400;"><?= $resultHeadSetting['address'] ?></font>
@@ -202,15 +229,18 @@ if (isset($_POST['filter_date'])) {
                             <tbody>
                                 <?php
                                 if (isset($_POST["filter_date"])) {
-                                    $dataTable = $dbcon->query("SELECT hdr.NOMOR_BC11,hdr.TANGGAL_BC11,hdr.PEMASOK,
-                                                                       brg.KODE_BARANG,brg.URAIAN,brg.KODE_SATUAN,brg.JUMLAH_SATUAN,hdr.KODE_VALUTA,brg.CIF
+                                    $dataTable = $dbcon->query("SELECT brg.KODE_BARANG,brg.URAIAN,brg.UKURAN,brg.SPESIFIKASI_LAIN,brg.KODE_SATUAN,
+                                                                        hdr.NOMOR_BC11,hdr.TANGGAL_BC11
                                                                 FROM plb_header AS hdr
                                                                 LEFT OUTER JOIN plb_barang AS brg ON hdr.NOMOR_AJU=brg.NOMOR_AJU
-                                                                WHERE hdr.TANGGAL_BC11 BETWEEN '$StartTanggal' AND '$EndTanggal'
+                                                                WHERE SUBSTR(hdr.TANGGAL_BC11,6,2) LIKE '%$Month%'
+                                                                AND SUBSTR(hdr.TANGGAL_BC11,1,4) LIKE '%$Year%'
                                                                 ORDER BY hdr.TANGGAL_BC11 ASC");
+                                    // var_dump($dataTable);
+                                    // exit;
                                 } else {
-                                    $dataTable = $dbcon->query("SELECT hdr.NOMOR_BC11,hdr.TANGGAL_BC11,hdr.PEMASOK,
-                                                                        brg.KODE_BARANG,brg.URAIAN,brg.KODE_SATUAN,brg.JUMLAH_SATUAN,hdr.KODE_VALUTA,brg.CIF
+                                    $dataTable = $dbcon->query("SELECT brg.KODE_BARANG,brg.URAIAN,brg.UKURAN,brg.SPESIFIKASI_LAIN,brg.KODE_SATUAN,
+                                                                        hdr.NOMOR_BC11,hdr.TANGGAL_BC11
                                                                 FROM plb_header AS hdr
                                                                 LEFT OUTER JOIN plb_barang AS brg ON hdr.NOMOR_AJU=brg.NOMOR_AJU
                                                                 ORDER BY hdr.TANGGAL_BC11 ASC LIMIT 0");
@@ -223,24 +253,19 @@ if (isset($_POST['filter_date'])) {
                                         <tr>
                                             <!-- 9 -->
                                             <td><?= $no ?>.</td>
-                                            <td>BC2.7 PLB</td>
-                                            <td><?= $row['NOMOR_BC11']; ?></td>
-                                            <td><?= $row['TANGGAL_BC11']; ?></td>
-                                            <td><?= $row['PEMASOK']; ?></td>
                                             <td><?= $row['KODE_BARANG']; ?></td>
                                             <td><?= $row['URAIAN']; ?></td>
-                                            <td>
-                                                <div style="display: flex;justify-content: space-between;align-items: center">
-                                                    <font><?= $row['KODE_SATUAN']; ?></font>
-                                                    <font><?= $row['JUMLAH_SATUAN']; ?></font>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div style="display: flex;justify-content: space-between;align-items: center">
-                                                    <font><?= $row['KODE_VALUTA']; ?></font>
-                                                    <font><?= $row['CIF']; ?></font>
-                                                </div>
-                                            </td>
+                                            <td><?= $row['UKURAN']; ?></td>
+                                            <td><?= $row['SPESIFIKASI_LAIN']; ?></td>
+                                            <td><?= $row['KODE_SATUAN']; ?></td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>0</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
                                         </tr>
                                     <?php } ?>
                                 <?php } else { ?>
