@@ -8,13 +8,91 @@ include "include/top-sidebar.php";
 include "include/cssDatatables.php";
 // include "include/sidebar.php";
 
-$sql_aju = '';
-if (isset($_POST["filterdata"])) {
+$NoPengajuan = '';
+$TanggalInputOne = '';
+$TanggalInputTwo = '';
+$NoBC27 = '';
+$TanggalBC27One = '';
+$TanggalBC27Two = '';
+$Supplier = '';
+$AlamatSupplier = '';
+$KodeNegara = '';
+$NamaNegara = '';
+$Party = '';
+$NoContainer = '';
+$MataUang = '';
+$TanggalMasukBarangOne = '';
+$TanggalMasukBarangTwo = '';
+$TanggalKeluarBarangOne = '';
+$TanggalKeluarBarangTwo = '';
+if (isset($_POST["findOne"])) {
 
-    if ($_POST["no_aju"] != '') {
-        $sql_aju = $_POST['no_aju'];
-    } else {
-        $sql_aju = '';
+    if ($_POST["NoPengajuan"] != '') {
+        $NoPengajuan = $_POST['NoPengajuan'];
+    }
+
+    if ($_POST["TanggalInputOne"] != '') {
+        $TanggalInputOne = $_POST['TanggalInputOne'];
+    }
+
+    if ($_POST["TanggalInputTwo"] != '') {
+        $TanggalInputTwo = $_POST['TanggalInputTwo'];
+    }
+
+    if ($_POST["NoBC27"] != '') {
+        $NoBC27 = $_POST['NoBC27'];
+    }
+
+    if ($_POST["TanggalBC27One"] != '') {
+        $TanggalBC27One = $_POST['TanggalBC27One'];
+    }
+
+    if ($_POST["TanggalBC27Two"] != '') {
+        $TanggalBC27Two = $_POST['TanggalBC27Two'];
+    }
+
+    if ($_POST["Supplier"] != '') {
+        $Supplier = $_POST['Supplier'];
+    }
+
+    if ($_POST["AlamatSupplier"] != '') {
+        $AlamatSupplier = $_POST['AlamatSupplier'];
+    }
+
+    if ($_POST["KodeNegara"] != '') {
+        $KodeNegara = $_POST['KodeNegara'];
+    }
+
+    if ($_POST["NamaNegara"] != '') {
+        $NamaNegara = $_POST['NamaNegara'];
+    }
+
+    if ($_POST["Party"] != '') {
+        $Party = $_POST['Party'];
+    }
+
+    if ($_POST["NoContainer"] != '') {
+        $NoContainer = $_POST['NoContainer'];
+    }
+
+    if ($_POST["MataUang"] != '') {
+        $MataUang = $_POST['MataUang'];
+    }
+
+    if ($_POST["TanggalMasukBarangOne"] != '') {
+        $TanggalMasukBarangOne = $_POST['TanggalMasukBarangOne'];
+    }
+
+    if ($_POST["TanggalMasukBarangTwo"] != '') {
+        $TanggalMasukBarangTwo = $_POST['TanggalMasukBarangTwo'];
+    }
+
+    if ($_POST["TanggalKeluarBarangOne"] != '') {
+        $TanggalKeluarBarangOne = $_POST['TanggalKeluarBarangOne'];
+    }
+
+    if ($_POST["TanggalKeluarBarangTwo"] != '') {
+        $TanggalKeluarBarangTwo = $_POST['TanggalKeluarBarangTwo'];
     }
 }
 
@@ -44,68 +122,161 @@ if (isset($_POST["filterdata"])) {
         <div class="col-xl-12">
             <div class="panel panel-inverse" data-sortable-id="ui-icons-1">
                 <div class="panel-heading">
-                    <h4 class="panel-title"><i class="fas fa-upload"></i> Upload Data CK5 Sarinah</h4>
+                    <h4 class="panel-title"><i class="fas fa-filter"></i> Filter Data TPB Sarinah</h4>
                     <?php include "include/panel-row.php"; ?>
                 </div>
                 <div class="panel-body text-inverse">
-                    <form action="" method="post" enctype="multipart/form-data">
-                        <div class="row" style="display: flex;align-items: center;">
-                            <div class="col-xl-12">
-                                <div class="row">
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>No. Pengajuan</label>
-                                            <input type="text" name="no_aju" class="form-control" placeholder="No. Pengajuan..." value="<?= $sql_aju ?>">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>No. BC.11</label>
-                                            <input type="text" name="no_bc11_plb" class="form-control" placeholder="No. BC.11...">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Tanggal BC.11</label>
-                                            <input type="date" name="tgl_bc11_plb" class="form-control" placeholder="Tanggal BC.11...">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Supplier Name</label>
-                                            <input type="text" name="supplier_name" class="form-control" placeholder="Supplier Name...">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Supplier Country</label>
-                                            <input type="text" name="supplier_country" class="form-control" placeholder="Supplier Country...">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Party</label>
-                                            <input type="text" name="party_info" class="form-control" placeholder="Party...">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Container No.</label>
-                                            <input type="text" name="cont_no" class="form-control" placeholder="Container No....">
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3">
-                                        <div class="form-group">
-                                            <label>Currency</label>
-                                            <input type="number" name="currency" class="form-control" placeholder="Currency...">
-                                        </div>
-                                    </div>
+                    <form action="" id="fformone" method="POST">
+                        <fieldset>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">No. Pengajuan</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="NoPengajuan" placeholder="No. Pengajuan ..." value="<?= $NoPengajuan ?>">
                                 </div>
                             </div>
-                            <div class="col-xl-12">
-                                <button type="submit" class="btn btn-block btn-primary" name="filterdata" value="filterdata"><i class="fas fa-upload"></i> Filter</button>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Tanggal Input</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalInputOne" placeholder="Tanggal Input ..." value="<?= $TanggalInputOne ?>">
+                                </div>
+                                <div class="col-md-1" style="display: flex;justify-content: center;">
+                                    <font>s.d</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalInputTwo" placeholder="Tanggal Input ..." value="<?= $TanggalInputTwo ?>">
+                                </div>
                             </div>
-                        </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">No. BC.27 PLB</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="NoBC27" placeholder="No. BC.27 PLB ..." value="<?= $NoBC27 ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Tanggal BC.27 PLB</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalBC27One" placeholder="Tanggal BC.27 PLB ..." value="<?= $TanggalBC27One ?>">
+                                </div>
+                                <div class="col-md-1" style="display: flex;justify-content: center;">
+                                    <font>s.d</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalBC27Two" placeholder="Tanggal BC.27 PLB ..." value="<?= $TanggalBC27Two ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Supplier</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="Supplier" placeholder="Supplier ..." value="<?= $Supplier ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Alamat Supplier</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="AlamatSupplier" placeholder="Alamat Supplier ..." value="<?= $AlamatSupplier ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Kode Negara / Nama Negara Supplier</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="text" class="form-control" name="KodeNegara" placeholder="Kode Negara ..." value="<?= $KodeNegara ?>">
+                                </div>
+                                <div class="col-md-1" style="display: flex;justify-content: center;">
+                                    <font>/</font>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="text" class="form-control" name="NamaNegara" placeholder="Nama Negara ..." value="<?= $NamaNegara ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Party</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="Party" placeholder="Party ..." value="<?= $Party ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">No. Container</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="NoContainer" placeholder="No. Container ..." value="<?= $NoContainer ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Mata Uang</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-7">
+                                    <input type="text" class="form-control" name="MataUang" placeholder="No. Container ..." value="<?= $MataUang ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Tanggal Masuk Barang</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalMasukBarangOne" placeholder="Tanggal Masuk Barang ..." value="<?= $TanggalMasukBarangOne ?>">
+                                </div>
+                                <div class="col-md-1" style="display: flex;justify-content: center;">
+                                    <font>s.d</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalMasukBarangTwo" placeholder="Tanggal Masuk Barang ..." value="<?= $TanggalMasukBarangTwo ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row m-b-15" style="align-items: center;">
+                                <label class="col-md-3 col-form-label">Tanggal Keluar Barang</label>
+                                <div class="col-md-2">
+                                    <font class="titik-dua">:</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalKeluarBarangOne" placeholder="Tanggal Keluar Barang ..." value="<?= $TanggalKeluarBarangOne ?>">
+                                </div>
+                                <div class="col-md-1" style="display: flex;justify-content: center;">
+                                    <font>s.d</font>
+                                </div>
+                                <div class="col-md-3">
+                                    <input type="date" class="form-control" name="TanggalKeluarBarangTwo" placeholder="Tanggal Keluar Barang ..." value="<?= $TanggalKeluarBarangTwo ?>">
+                                </div>
+                            </div>
+                            <div class="form-group row" style="justify-content: flex-end;">
+                                <div class="col-md-7 offset-md-3">
+                                    <button type="submit" class="btn btn-info m-r-5" name="findOne">
+                                        <i class="fa fa-search"></i> Cari
+                                    </button>
+                                    <a href="report_data_tpb.php" type="button" class="btn btn-yellow m-r-5">
+                                        <i class="fa fa-refresh"></i> Reset
+                                    </a>
+                                </div>
+                            </div>
+                        </fieldset>
                     </form>
                 </div>
             </div>
@@ -124,49 +295,85 @@ if (isset($_POST["filterdata"])) {
                         <table id="data-table-buttons" class="table table-striped table-bordered table-td-valign-middle">
                             <thead>
                                 <tr>
-                                    <th style="text-align:center">BC.27</th>
-                                    <th style="text-align:center">Tgl Input</th>
-                                    <th style="text-align:center">No BC11</th>
-                                    <th style="text-align:center">Tgl BC11</th>
-                                    <th style="text-align:center">Negara</th>
+                                    <th style="text-align:center">No. Pengajuan BC.27PLB</th>
+                                    <th style="text-align:center">Tanggal Input</th>
+                                    <th style="text-align:center">No. Daftar (BC.27PLB)</th>
+                                    <th style="text-align:center">Tanggal Daftar (BC.27PLB)</th>
+                                    <th style="text-align:center">Kode Negara / Nama Negara</th>
                                     <th style="text-align:center">Supplier</th>
                                     <th style="text-align:center">Jumlah Barang</th>
-                                    <th style="text-align:center">Currency</th>
+                                    <th style="text-align:center">Party</th>
+                                    <th style="text-align:center">Valas</th>
                                     <th style="text-align:center">Nilai Total</th>
+                                    <th style="text-align:center">No. Aju (BC.27)</th>
+                                    <th style="text-align:center">Tanggal Input (BC.27)</th>
+                                    <th style="text-align:center">No. Daftar (BC.27)</th>
+                                    <th style="text-align:center">Tanggal Daftar (BC.27)</th>
                                     <th style="text-align:center">NPWP Tujuan</th>
                                     <th style="text-align:center">Nama Tujuan</th>
                                     <th style="text-align:center">Origin</th>
-                                    <?php if (isset($_POST["filterdata"])) { ?>
+                                    <th style="text-align:center">Tanggal Masuk Barang</th>
+                                    <th style="text-align:center">Tanggal Keluar Barang</th>
+                                    <?php if (isset($_POST["findOne"])) { ?>
                                         <th style="text-align:center">Cont. Details</th>
-                                        <!-- <th style="text-align:center">Cont. No</th> -->
                                     <?php } else { ?>
                                     <?php } ?>
-                                    <!-- <th>Action</th> -->
                                 </tr>
                             </thead>
                             <tbody>
                                 <?php
-                                if (isset($_POST["filterdata"])) {
-                                    $result2 = mysqli_query($dbcon, "SELECT * FROM tpb_header WHERE NOMOR_AJU LIKE '%$sql_aju%'");
-                                } else {
-                                    $result2 = mysqli_query($dbcon, "SELECT * FROM tpb_header LIMIT 0");
-                                }
+                                // if (isset($_POST["findOne"])) {
+                                //     $result2 = mysqli_query($dbcon, "SELECT a.*,ngr.URAIAN_NEGARA
+                                //                                      FROM tpb_header AS a
+                                //                                      LEFT OUTER JOIN referensi_negara AS ngr ON a.KODE_NEGARA_PEMASOK=ngr.KODE_NEGARA
+                                //                                      WHERE a.NOMOR_AJU LIKE '%$NoPengajuan%' 
+                                //                                      AND a.TANGGAL_AJU BETWEEN $TanggalInputOne AND $TanggalInputTwo
+                                //                                      AND a.NOMOR_BC11 LIKE '%$NoBC27%'
+                                //                                      AND a.TANGGAL_BC11 BETWEEN $TanggalBC27One AND $TanggalBC27Two
+                                //                                      AND a.NAMA_PEMASOK LIKE '%$Supplier%'
+                                //                                      AND a.ALAMAT_PEMASOK LIKE '%$AlamatSupplier%'
+                                //                                      AND a.KODE_NEGARA_PEMASOK LIKE '%$KodeNegara%'
+                                //                                      AND ngr.URAIAN_NEGARA LIKE '%$KodeNegara%'
+                                //                                     --  AND a.NAMA_PENERIMA_BARANG LIKE '%$Party%' ??
+                                //                                      AND a.KODE_VALUTA LIKE '%$MataUang%'
+                                //                                      AND a.TANGGAL_DAFTAR BETWEEN $TanggalMasukBarangOne AND $TanggalMasukBarangTwo
+                                //                                      AND a.TANGGAL_TTD BETWEEN $TanggalKeluarBarangOne AND $TanggalKeluarBarangTwo
+                                //                                      ORDER BY a.NOMOR_AJU ASC");
+                                // } else {
+                                $result2 = mysqli_query($dbcon, "SELECT plb.NOMOR_AJU AS aju_plb,plb.TANGGAL_DAFTAR AS tgl_daftar_plb,plb.NOMOR_DAFTAR AS nomor_daftar_plb,plb.TANGGAL_BC11 AS tgl_bc11_plb,
+                                                                 plb_kem.JUMLAH_KEMASAN,plb_kem.KODE_JENIS_KEMASAN,plb_kem.MEREK_KEMASAN,
+                                                                 ref_kem.URAIAN_KEMASAN,
+                                                                 tpb.NOMOR_AJU AS nomor_aju_tpb,tpb.TANGGAL_AJU AS tgl_aju_tpb,tpb.TANGGAL_DAFTAR,tpb.NOMOR_DAFTAR,tpb.KODE_NEGARA_PEMASOK,tpb.NAMA_PEMASOK,tpb.JUMLAH_BARANG,tpb.KODE_VALUTA,tpb.CIF,tpb.NAMA_PENERIMA_BARANG,tpb.ALAMAT_PEMASOK,
+                                                                 ngr.URAIAN_NEGARA,
+                                                                 peng.NPWP
+                                                                 FROM plb_header AS plb
+                                                                 LEFT OUTER JOIN plb_kemasan AS plb_kem ON plb.NOMOR_AJU=plb_kem.NOMOR_AJU
+                                                                 LEFT OUTER JOIN referensi_kemasan AS ref_kem ON plb_kem.KODE_JENIS_KEMASAN=ref_kem.KODE_KEMASAN
+                                                                 LEFT OUTER JOIN tpb_header AS tpb ON plb.NOMOR_DAFTAR=tpb.NOMOR_DAFTAR
+                                                                 LEFT OUTER JOIN referensi_negara AS ngr ON tpb.KODE_NEGARA_PEMASOK=ngr.KODE_NEGARA
+                                                                 LEFT OUTER JOIN referensi_pengusaha AS peng ON tpb.NAMA_PENERIMA_BARANG=peng.NAMA");
+                                // }
                                 if (mysqli_num_rows($result2) > 0) {
                                     while ($row2 = mysqli_fetch_array($result2)) {
                                         echo "<tr>";
-                                        echo "<td>" . $row2['NOMOR_AJU'] . "</td>";
-                                        echo "<td>" . $row2['TANGGAL_AJU'] . "</td>";
-                                        echo "<td>" . $row2['NOMOR_BC11'] . ".</td>";
-                                        echo "<td>" . $row2['TANGGAL_BC11'] . "</td>";
-                                        echo "<td>" . $row2['KODE_NEGARA_PEMASOK'] . "</td>";
+                                        echo "<td>" . $row2['aju_plb'] . "</td>";
+                                        echo "<td>" . $row2['tgl_aju_tpb'] . "</td>";
+                                        echo "<td>" . $row2['nomor_daftar_plb'] . ".</td>";
+                                        echo "<td>" . $row2['tgl_daftar_plb'] . "</td>";
+                                        echo "<td>" . $row2['KODE_NEGARA_PEMASOK'] . "/" . $row2['URAIAN_NEGARA'] . "</td>";
                                         echo "<td>" . $row2['NAMA_PEMASOK'] . "</td>";
                                         echo "<td>" . $row2['JUMLAH_BARANG'] . "</td>";
+                                        echo "<td>" . $row2['JUMLAH_KEMASAN'] . " " . $row2['URAIAN_KEMASAN'] . " " . $row2['MEREK_KEMASAN'] . "</td>";
                                         echo "<td>" . $row2['KODE_VALUTA'] . "</td>";
-                                        echo "<td>" . $row2['HARGA_PENYERAHAN'] . "</td>";
-                                        echo "<td>" . $row2['ID_PENERIMA_BARANG'] . "</td>";
+                                        echo "<td>" . $row2['CIF'] . "</td>";
+                                        echo "<td>" . $row2['nomor_aju_tpb'] . "</td>";
+                                        echo "<td></td>";
+                                        echo "<td></td>";
+                                        echo "<td></td>";
+                                        echo "<td>" . $row2['NPWP'] . "</td>";
                                         echo "<td>" . $row2['NAMA_PENERIMA_BARANG'] . "</td>";
                                         echo "<td>" . $row2['ALAMAT_PEMASOK'] . "</td>";
-                                        if (isset($_POST["filterdata"])) { ?>
+                                        if (isset($_POST["findOne"])) { ?>
                                             <td>
                                                 <a href="#kontainer<?= $row2['ID'] ?>" class="btn btn-primary" data-toggle="modal" title="Cont. Details"><i class="fas fa-box"></i> Cont. Details</a>
                                             </td>
@@ -190,15 +397,13 @@ if (isset($_POST["filterdata"])) {
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <?php
-                                                                        /* get container details */
                                                                         $contDet = mysqli_query($dbcon, "SELECT * FROM tpb_kontainer WHERE ID_HEADER = '$row2[ID]' ");
-                                                                        // $cont = mysqli_fetch_array($contDet);
                                                                         if (mysqli_num_rows($contDet) > 0) {
                                                                             $nocont = 0;
                                                                             while ($cont = mysqli_fetch_array($contDet)) {
                                                                                 $nocont++;
                                                                         ?>
-                                                                                <div style="display: flex;justify-content: space-between;align-items: center;padding: 10px;font-weight: 700;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;">
+                                                                                <div style="display: flex;justify-content: space-between;align-items: center;padding: 10px;font-weight: 700;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;background: #ddd;">
                                                                                     <div style="display: grid;">
                                                                                         <font>No.</font>
                                                                                         <font style="font-weight: 400;"><?= $nocont; ?>.</font>

@@ -51,4 +51,3 @@ if (isset($_FILES["file_upload"])) {
 	echo "File not selected";
     echo "<script>window.location.href='report_ck5_plb.php?UploadFailed=true';</script>";
 }
-?>
