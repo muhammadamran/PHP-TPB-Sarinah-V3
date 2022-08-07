@@ -316,9 +316,9 @@ if (isset($_POST["findOne"])) {
                                     <th style="text-align:center">No. Daftar</th>
                                     <th style="text-align:center">Tanggal Daftar</th>
                                     <!-- Tujuan -->
-                                    <th rowspan="2" style="text-align:center">NPWP</th>
-                                    <th rowspan="2" style="text-align:center">Nama</th>
-                                    <th rowspan="2" style="text-align:center">Alamat</th>
+                                    <th style="text-align:center">NPWP</th>
+                                    <th style="text-align:center">Nama</th>
+                                    <th style="text-align:center">Alamat</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -371,7 +371,7 @@ if (isset($_POST["findOne"])) {
                                         $_where = where_add($_where, ' tpb.TANGGAL_BC11 BETWEEN "' . $TanggalKeluarBarangOne . '" AND "' . $TanggalKeluarBarangTwo . '"');
                                     }
 
-                                    echo $_where;
+                                    // echo $_where;
                                     $result2 = mysqli_query($dbcon, "SELECT tpb.ID AS TPB_ID,
                                                                             plb.NOMOR_AJU AS PLB_NOMOR_AJU,
                                                                             plb.NOMOR_DAFTAR AS PLB_NOMOR_DAFTAR,
@@ -526,7 +526,17 @@ if (isset($_POST["findOne"])) {
                                                                                         <font style="font-weight: 400;"><?= $cont['NOMOR_KONTAINER']; ?></font>
                                                                                     </div>
                                                                                 </div>
-                                                                        <?php }
+                                                                            <?php }
+                                                                        } else {
+                                                                            ?>
+                                                                            <div style="padding: 10px;font-weight: 700;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;background: #ddd;">
+                                                                                <center>
+                                                                                    <div style="display: grid;">
+                                                                                        <i class="far fa-times-circle no-data"></i> Tidak ada data
+                                                                                    </div>
+                                                                                </center>
+                                                                            </div>
+                                                                        <?php
                                                                         }
                                                                         ?>
                                                                         <div class="form-group">
