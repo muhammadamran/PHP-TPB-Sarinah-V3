@@ -60,7 +60,7 @@ include "include/cssForm.php";
                         </div>
                     </form>
                 </div>
-            </div>            
+            </div>
         </div>
     </div>
 
@@ -83,20 +83,20 @@ include "include/cssForm.php";
                     $rowLogUpload = mysqli_fetch_array($dataLogUpload);
                     ?>
                     <?php if ($rowLogUpload['username'] != NULL) { ?>
-                    <div class="note note-default">
-                        <div class="note-icon"><i class="fas fa-history"></i></div>
-                        <div class="note-content">
-                            <h4><b>Informasi File Upload Excel CK5 PLB!</b></h4>
-                            <hr>
-                            <p style="display: grid;"> 
-                                <font>Terakhir diupload oleh: <?= $rowLogUpload['username']; ?></font> 
-                                <font>DateTime upload: <?= $rowLogUpload['dateupload']; ?></font>
-                                <font>Nama File: <?= $rowLogUpload['filename']; ?></font>
-                                <font>Total Data: <?= decimal($rowLogUpload['totalupload']); ?></font>
-                                <font>Status: <?= $rowLogUpload['status']; ?></font>
-                            </p>
+                        <div class="note note-default">
+                            <div class="note-icon"><i class="fas fa-history"></i></div>
+                            <div class="note-content">
+                                <h4><b>Informasi File Upload Excel CK5 PLB!</b></h4>
+                                <hr>
+                                <p style="display: grid;">
+                                    <font>Terakhir diupload oleh: <?= $rowLogUpload['username']; ?></font>
+                                    <font>DateTime upload: <?= $rowLogUpload['dateupload']; ?></font>
+                                    <font>Nama File: <?= $rowLogUpload['filename']; ?></font>
+                                    <font>Total Data: <?= decimal($rowLogUpload['totalupload']); ?></font>
+                                    <font>Status: <?= $rowLogUpload['status']; ?></font>
+                                </p>
+                            </div>
                         </div>
-                    </div>
                     <?php } ?>
                     <!-- End Alert -->
 
@@ -348,14 +348,14 @@ include "include/cssForm.php";
                                             $noHeader = 0;
                                             while ($rowHeader = mysqli_fetch_array($dataTable)) {
                                                 $noHeader++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noHeader ?>. </td>
                                                     <td style="text-align: center;">
                                                         <a href="./report_ck5_plb_detail.php?AJU=<?= $rowHeader['NOMOR_AJU']; ?>" target="_blank" class="btn btn-primary" title="./report_ck5_plb_detail.php?AJU=<?= $rowHeader['NOMOR_AJU']; ?>">
                                                             <i class="fas fa-eye"></i><br>
                                                             <font style="font-size: 8px;display: flex;width: 55px;justify-content: center;">
-                                                                 Lihat Detail
+                                                                Lihat Detail
                                                             </font>
                                                         </a>
                                                     </td>
@@ -542,7 +542,8 @@ include "include/cssForm.php";
                                             <th style="text-align: center;">JUMLAH SATUAN</th>
                                             <th style="text-align: center;">JUMLAH SATUAN</th>
                                             <th style="text-align: center;">KODE ASAL BAHAN BAKU</th>
-                                            <th style="text-align: center;">KODE BARANG KODE FASILITAS</th>
+                                            <th style="text-align: center;">KODE BARANG</th>
+                                            <th style="text-align: center;">KODE FASILITAS</th>
                                             <th style="text-align: center;">KODE JENIS DOK ASAL</th>
                                             <th style="text-align: center;">KODE KANTOR</th>
                                             <th style="text-align: center;">KODE SKEMA TARIF</th>
@@ -569,12 +570,12 @@ include "include/cssForm.php";
                                             $noBahanBaku = 0;
                                             while ($rowBahanBaku = mysqli_fetch_array($dataTable)) {
                                                 $noBahanBaku++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBahanBaku ?>. </td>
                                                     <td><?= $rowBahanBaku['NOMOR_AJU']; ?></td>
                                                     <td><?= $rowBahanBaku['SERI_BARANG']; ?></td>
-                                                    <td><?= $rowBahanBaku['SERI_BAHAN BAKU']; ?></td>
+                                                    <td><?= $rowBahanBaku['SERI_BAHAN_BAKU']; ?></td>
                                                     <td><?= $rowBahanBaku['CIF']; ?></td>
                                                     <td><?= $rowBahanBaku['CIF_RUPIAH']; ?></td>
                                                     <td><?= $rowBahanBaku['HARGA_PENYERAHAN']; ?></td>
@@ -583,7 +584,8 @@ include "include/cssForm.php";
                                                     <td><?= $rowBahanBaku['JUMLAH_SATUAN']; ?></td>
                                                     <td><?= $rowBahanBaku['JUMLAH_SATUAN']; ?></td>
                                                     <td><?= $rowBahanBaku['KODE_ASAL_BAHAN_BAKU']; ?></td>
-                                                    <td><?= $rowBahanBaku['KODE_BARANG_KODE_FASILITAS']; ?></td>
+                                                    <td><?= $rowBahanBaku['KODE_BARANG']; ?></td>
+                                                    <td><?= $rowBahanBaku['KODE_FASILITAS']; ?></td>
                                                     <td><?= $rowBahanBaku['KODE_JENIS_DOK_ASAL']; ?></td>
                                                     <td><?= $rowBahanBaku['KODE_KANTOR']; ?></td>
                                                     <td><?= $rowBahanBaku['KODE_SKEMA_TARIF']; ?></td>
@@ -615,7 +617,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBahanBaku -->
@@ -627,7 +629,7 @@ include "include/cssForm.php";
                                         <tr>
                                             <th width="1%">#</th>
                                             <th style="text-align: center;">NOMOR AJU</th>
-                                            <th style="text-align: center;">SERI BARANG</th> 
+                                            <th style="text-align: center;">SERI BARANG</th>
                                             <th style="text-align: center;">SERI BAHAN BAKU</th>
                                             <th style="text-align: center;">JENIS TARIF</th>
                                             <th style="text-align: center;">JUMLAH SATUAN</th>
@@ -650,15 +652,15 @@ include "include/cssForm.php";
                                             $noBahanBakuTarif = 0;
                                             while ($rowBahanBakuTarif = mysqli_fetch_array($dataTable)) {
                                                 $noBahanBakuTarif++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBahanBakuTarif ?>. </td>
                                                     <td><?= $rowBahanBakuTarif['NOMOR_AJU']; ?></td>
-                                                    <td><?= $rowBahanBakuTarif['SERI_BARANG']; ?></td> 
+                                                    <td><?= $rowBahanBakuTarif['SERI_BARANG']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['SERI_BAHAN_BAKU']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['JENIS_TARIF']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['JUMLAH_SATUAN']; ?></td>
-                                                    <td><?= $rowBahanBakuTarif['KODE_ASAL_BAHAN BAKU']; ?></td>
+                                                    <td><?= $rowBahanBakuTarif['KODE_ASAL_BAHAN_BAKU']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['KODE_FASILITAS']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['KODE_KOMODITI_CUKAI']; ?></td>
                                                     <td><?= $rowBahanBakuTarif['KODE_SATUAN']; ?></td>
@@ -682,7 +684,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBahanBakuTarif -->
@@ -707,7 +709,7 @@ include "include/cssForm.php";
                                             $noBahanBakuDokumen = 0;
                                             while ($rowBahanBakuDokumen = mysqli_fetch_array($dataTable)) {
                                                 $noBahanBakuDokumen++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBahanBakuDokumen ?>. </td>
                                                     <td><?= $rowBahanBakuDokumen['NOMOR_AJU']; ?></td>
@@ -729,7 +731,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBahanBakuDokumen -->
@@ -799,7 +801,7 @@ include "include/cssForm.php";
                                             $noBarang = 0;
                                             while ($rowBarang = mysqli_fetch_array($dataTable)) {
                                                 $noBarang++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBarang ?>. </td>
                                                     <td><?= $rowBarang['NOMOR_AJU']; ?></td>
@@ -866,7 +868,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBarang -->
@@ -899,7 +901,7 @@ include "include/cssForm.php";
                                             $noBarangTarif = 0;
                                             while ($rowBarangTarif = mysqli_fetch_array($dataTable)) {
                                                 $noBarangTarif++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBarangTarif ?>. </td>
                                                     <td><?= $rowBarangTarif['NOMOR_AJU']; ?></td>
@@ -929,7 +931,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBarangTarif -->
@@ -952,7 +954,7 @@ include "include/cssForm.php";
                                             $noBarangDokumen = 0;
                                             while ($rowBarangDokumen = mysqli_fetch_array($dataTable)) {
                                                 $noBarangDokumen++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noBarangDokumen ?>. </td>
                                                     <td><?= $rowBarangDokumen['NOMOR_AJU']; ?></td>
@@ -972,7 +974,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDBarangDokumen -->
@@ -1000,7 +1002,7 @@ include "include/cssForm.php";
                                             $noDokumen = 0;
                                             while ($rowDokumen = mysqli_fetch_array($dataTable)) {
                                                 $noDokumen++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noDokumen ?>. </td>
                                                     <td><?= $rowDokumen['NOMOR_AJU']; ?></td>
@@ -1025,7 +1027,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDDokumen -->
@@ -1058,7 +1060,7 @@ include "include/cssForm.php";
                                             $noKemasan = 0;
                                             while ($rowKemasan = mysqli_fetch_array($dataTable)) {
                                                 $noKemasan++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noKemasan ?>. </td>
                                                     <td><?= $rowKemasan['NOMOR_AJU']; ?></td>
@@ -1088,7 +1090,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDKemasan -->
@@ -1122,7 +1124,7 @@ include "include/cssForm.php";
                                             $noKontainer = 0;
                                             while ($rowKontainer = mysqli_fetch_array($dataTable)) {
                                                 $noKontainer++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noKontainer ?>. </td>
                                                     <td><?= $rowKontainer['NOMOR_AJU']; ?></td>
@@ -1153,7 +1155,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDKontainer -->
@@ -1179,7 +1181,7 @@ include "include/cssForm.php";
                                             $noRespon = 0;
                                             while ($rowRespon = mysqli_fetch_array($dataTable)) {
                                                 $noRespon++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noRespon ?>. </td>
                                                     <td><?= $rowRespon['NOMOR_AJU']; ?></td>
@@ -1202,7 +1204,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDRespon -->
@@ -1229,7 +1231,7 @@ include "include/cssForm.php";
                                             $noStatus = 0;
                                             while ($rowStatus = mysqli_fetch_array($dataTable)) {
                                                 $noStatus++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noStatus ?>. </td>
                                                     <td><?= $rowStatus['NOMOR_AJU']; ?></td>
@@ -1239,21 +1241,21 @@ include "include/cssForm.php";
                                                     <td>
                                                         <?php if ($rowStatus['ck5_plb_export'] == '0000-00-00 00:00:00' || $rowStatus['ck5_plb_export'] == NULL) { ?>
                                                             <center><i>Belum di Export</i></center>
-                                                        <?php } else { ?> 
+                                                        <?php } else { ?>
                                                             <?= $rowStatus['ck5_plb_export']; ?>
                                                         <?php } ?>
                                                     </td>
                                                     <td>
                                                         <?php if ($rowStatus['ck5_gb_submit'] == '0000-00-00 00:00:00' || $rowStatus['ck5_gb_submit'] == NULL) { ?>
                                                             <center><i>Belum di Submit</i></center>
-                                                        <?php } else { ?> 
+                                                        <?php } else { ?>
                                                             <?= $rowStatus['ck5_gb_submit']; ?>
                                                         <?php } ?>
                                                     </td>
                                                     <td>
                                                         <?php if ($rowStatus['ck_gb_export'] == '0000-00-00 00:00:00' || $rowStatus['ck_gb_export'] == NULL) { ?>
                                                             <center><i>Belum di Export</i></center>
-                                                        <?php } else { ?> 
+                                                        <?php } else { ?>
                                                             <?= $rowStatus['ck_gb_export']; ?>
                                                         <?php } ?>
                                                     </td>
@@ -1271,7 +1273,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDStatus -->
@@ -1296,7 +1298,7 @@ include "include/cssForm.php";
                                             $noLog = 0;
                                             while ($rowLog = mysqli_fetch_array($dataTable)) {
                                                 $noLog++;
-                                                ?>
+                                        ?>
                                                 <tr class="odd gradeX">
                                                     <td><?= $noLog ?>. </td>
                                                     <td><?= $rowLog['username']; ?></td>
@@ -1318,7 +1320,7 @@ include "include/cssForm.php";
                                             </tr>
                                         <?php } ?>
                                     </tbody>
-                                </table>                                
+                                </table>
                             </div>
                         </div>
                         <!-- End IDLog -->
@@ -1360,158 +1362,158 @@ include "include/cssForm.php";
 
     // TableHeader
     $(document).ready(function() {
-        $('#TableHeader').DataTable( {
+        $('#TableHeader').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBahanBaku
     $(document).ready(function() {
-        $('#TableBahanBaku').DataTable( {
+        $('#TableBahanBaku').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBahanBakuTarif
     $(document).ready(function() {
-        $('#TableBahanBakuTarif').DataTable( {
+        $('#TableBahanBakuTarif').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBahanBakuDokumen
     $(document).ready(function() {
-        $('#TableBahanBakuDokumen').DataTable( {
+        $('#TableBahanBakuDokumen').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBarang
     $(document).ready(function() {
-        $('#TableBarang').DataTable( {
+        $('#TableBarang').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBarangTarif
     $(document).ready(function() {
-        $('#TableBarangTarif').DataTable( {
+        $('#TableBarangTarif').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableBarangDokumen
     $(document).ready(function() {
-        $('#TableBarangDokumen').DataTable( {
+        $('#TableBarangDokumen').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableDokumen
     $(document).ready(function() {
-        $('#TableDokumen').DataTable( {
+        $('#TableDokumen').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableKemasan
     $(document).ready(function() {
-        $('#TableKemasan').DataTable( {
+        $('#TableKemasan').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableKontainer
     $(document).ready(function() {
-        $('#TableKontainer').DataTable( {
+        $('#TableKontainer').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableRespon
     $(document).ready(function() {
-        $('#TableRespon').DataTable( {
+        $('#TableRespon').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableStatus
     $(document).ready(function() {
-        $('#TableStatus').DataTable( {
+        $('#TableStatus').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
     // TableLog
     $(document).ready(function() {
-        $('#TableLog').DataTable( {
+        $('#TableLog').DataTable({
             dom: 'Bfrtip',
             buttons: [
-            'copyHtml5',
-            'excelHtml5',
-            'csvHtml5',
-            'pdfHtml5'
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5'
             ]
-        } );
-    } );
+        });
+    });
 </script>

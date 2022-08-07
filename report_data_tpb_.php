@@ -9,10 +9,13 @@ include "include/cssDatatables.php";
 // include "include/sidebar.php";
 
 $NoPengajuan = '';
+$TanggalInputOne = '';
+$TanggalInputTwo = '';
 $NoBC27 = '';
 $TanggalBC27One = '';
 $TanggalBC27Two = '';
 $Supplier = '';
+$AlamatSupplier = '';
 $KodeNegara = '';
 $NamaNegara = '';
 $Party = '';
@@ -23,17 +26,18 @@ $TanggalMasukBarangTwo = '';
 $TanggalKeluarBarangOne = '';
 $TanggalKeluarBarangTwo = '';
 if (isset($_POST["findOne"])) {
+
     if ($_POST["NoPengajuan"] != '') {
         $NoPengajuan = $_POST['NoPengajuan'];
     }
 
-    // if ($_POST["TanggalInputOne"] != '') {
-    //     $TanggalInputOne = $_POST['TanggalInputOne'];
-    // }
+    if ($_POST["TanggalInputOne"] != '') {
+        $TanggalInputOne = $_POST['TanggalInputOne'];
+    }
 
-    // if ($_POST["TanggalInputTwo"] != '') {
-    //     $TanggalInputTwo = $_POST['TanggalInputTwo'];
-    // }
+    if ($_POST["TanggalInputTwo"] != '') {
+        $TanggalInputTwo = $_POST['TanggalInputTwo'];
+    }
 
     if ($_POST["NoBC27"] != '') {
         $NoBC27 = $_POST['NoBC27'];
@@ -51,9 +55,9 @@ if (isset($_POST["findOne"])) {
         $Supplier = $_POST['Supplier'];
     }
 
-    // if ($_POST["AlamatSupplier"] != '') {
-    //     $AlamatSupplier = $_POST['AlamatSupplier'];
-    // }
+    if ($_POST["AlamatSupplier"] != '') {
+        $AlamatSupplier = $_POST['AlamatSupplier'];
+    }
 
     if ($_POST["KodeNegara"] != '') {
         $KodeNegara = $_POST['KodeNegara'];
@@ -133,7 +137,7 @@ if (isset($_POST["findOne"])) {
                                     <input type="text" class="form-control" name="NoPengajuan" placeholder="No. Pengajuan PLB ..." value="<?= $NoPengajuan ?>">
                                 </div>
                             </div>
-                            <!-- <div class="form-group row m-b-15" style="align-items: center;">
+                            <div class="form-group row m-b-15" style="align-items: center;">
                                 <label class="col-md-3 col-form-label">Tanggal Input PLB</label>
                                 <div class="col-md-2">
                                     <font class="titik-dua">:</font>
@@ -147,7 +151,7 @@ if (isset($_POST["findOne"])) {
                                 <div class="col-md-3">
                                     <input type="date" class="form-control" name="TanggalInputTwo" placeholder="Tanggal Input PLB ..." value="<?= $TanggalInputTwo ?>">
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="form-group row m-b-15" style="align-items: center;">
                                 <label class="col-md-3 col-form-label">No. BC.27 PLB</label>
                                 <div class="col-md-2">
@@ -181,7 +185,7 @@ if (isset($_POST["findOne"])) {
                                     <input type="text" class="form-control" name="Supplier" placeholder="Supplier ..." value="<?= $Supplier ?>">
                                 </div>
                             </div>
-                            <!-- <div class="form-group row m-b-15" style="align-items: center;">
+                            <div class="form-group row m-b-15" style="align-items: center;">
                                 <label class="col-md-3 col-form-label">Alamat Supplier</label>
                                 <div class="col-md-2">
                                     <font class="titik-dua">:</font>
@@ -189,7 +193,7 @@ if (isset($_POST["findOne"])) {
                                 <div class="col-md-7">
                                     <input type="text" class="form-control" name="AlamatSupplier" placeholder="Alamat Supplier ..." value="<?= $AlamatSupplier ?>">
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="form-group row m-b-15" style="align-items: center;">
                                 <label class="col-md-3 col-form-label">Kode Negara / Nama Negara Supplier</label>
                                 <div class="col-md-2">
@@ -229,7 +233,7 @@ if (isset($_POST["findOne"])) {
                                     <font class="titik-dua">:</font>
                                 </div>
                                 <div class="col-md-7">
-                                    <input type="text" class="form-control" name="MataUang" placeholder="Mata Uang ..." value="<?= $MataUang ?>">
+                                    <input type="text" class="form-control" name="MataUang" placeholder="No. Container ..." value="<?= $MataUang ?>">
                                 </div>
                             </div>
                             <div class="form-group row m-b-15" style="align-items: center;">
@@ -302,7 +306,10 @@ if (isset($_POST["findOne"])) {
                                     <th colspan="3" style="text-align:center">Tujuan</th>
                                     <th rowspan="2" style="text-align:center">Tanggal Masuk Barang</th>
                                     <th rowspan="2" style="text-align:center">Tanggal Keluar Barang</th>
-                                    <th rowspan="2" style="text-align:center">Cont. Details</th>
+                                    <?php if (isset($_POST["findOne"])) { ?>
+                                        <th rowspan="2" style="text-align:center">Cont. Details</th>
+                                    <?php } else { ?>
+                                    <?php } ?>
                                 </tr>
                                 <tr>
                                     <!-- PLB -->
@@ -323,94 +330,25 @@ if (isset($_POST["findOne"])) {
                             </thead>
                             <tbody>
                                 <?php
-                                if (isset($_POST["findOne"])) {
-                                    function where_add($_wh, $_add)
-                                    {
-                                        $wh = '';
-                                        if ($wh == '') {
-                                            return 'WHERE ' . $_add;
-                                        } else {
-                                            return $_wh . ' AND ' . $_add;
-                                        }
-                                    }
-                                    $i = 1;
-                                    $_where = '';
-                                    $i = 1;
-                                    $_where = '';
-                                    if ($NoPengajuan == true) {
-                                        $_where = where_add($_where, ' plb.NOMOR_AJU LIKE ' . "'%$NoPengajuan%'" . '');
-                                    }
-                                    if ($NoBC27 == true) {
-                                        $_where = where_add($_where, ' plb.NOMOR_DAFTAR LIKE ' . "'%$NoBC27%'" . '');
-                                    }
-                                    if ($NoBC27 == true) {
-                                        $_where = where_add($_where, ' plb.TANGGAL_DAFTAR BETWEEN "' . $TanggalBC27One . '" AND "' . $TanggalBC27Two . '"');
-                                    }
-                                    if ($Supplier == true) {
-                                        $_where = where_add($_where, ' tpb.NAMA_PEMASOK LIKE ' . "'%$Supplier%'" . '');
-                                    }
-                                    if ($KodeNegara == true) {
-                                        $_where = where_add($_where, ' tpb.KODE_NEGARA_PEMASOK LIKE ' . "'%$KodeNegara%'" . '');
-                                    }
-                                    if ($NamaNegara == true) {
-                                        $_where = where_add($_where, ' ngr.URAIAN_NEGARA LIKE ' . "'%$NamaNegara%'" . '');
-                                    }
-                                    if ($Party == true) {
-                                        $_where = where_add($_where, ' plb_kem.JUMLAH_KEMASAN LIKE ' . "'%$Party%'" . '');
-                                    }
-                                    if ($NoContainer == true) {
-                                        $_where = where_add($_where, ' kon.NOMOR_KONTAINER LIKE ' . "'%$NoContainer%'" . '');
-                                    }
-                                    if ($MataUang == true) {
-                                        $_where = where_add($_where, ' tpb.KODE_VALUTA LIKE ' . "'%$MataUang%'" . '');
-                                    }
-                                    if ($TanggalMasukBarangOne == true) {
-                                        $_where = where_add($_where, ' plb.TANGGAL_BC11 BETWEEN "' . $TanggalMasukBarangOne . '" AND "' . $TanggalMasukBarangTwo . '"');
-                                    }
-                                    if ($TanggalKeluarBarangOne == true) {
-                                        $_where = where_add($_where, ' tpb.TANGGAL_BC11 BETWEEN "' . $TanggalKeluarBarangOne . '" AND "' . $TanggalKeluarBarangTwo . '"');
-                                    }
-
-                                    echo $_where;
-                                    $result2 = mysqli_query($dbcon, "SELECT tpb.ID AS TPB_ID,
-                                                                            plb.NOMOR_AJU AS PLB_NOMOR_AJU,
-                                                                            plb.NOMOR_DAFTAR AS PLB_NOMOR_DAFTAR,
-                                                                            plb.TANGGAL_DAFTAR AS PLB_TANGGAL_DAFTAR,
-
-                                                                            tpb.NOMOR_AJU AS TPB_NOMOR_AJU,
-                                                                            tpb.NOMOR_DAFTAR AS TPB_NOMOR_DAFTAR,
-                                                                            tpb.TANGGAL_DAFTAR AS TPB_TANGGAL_DAFTAR,
-
-                                                                            tpb.KODE_NEGARA_PEMASOK,
-                                                                            ngr.URAIAN_NEGARA,
-                                                                            tpb.NAMA_PEMASOK,
-                                                                            tpb.JUMLAH_BARANG,
-                                                                            plb_kem.KODE_JENIS_KEMASAN,
-                                                                            plb_kem.JUMLAH_KEMASAN,
-                                                                            ref_kem.URAIAN_KEMASAN,
-                                                                            plb_kem.MEREK_KEMASAN,
-                                                                            tpb.KODE_VALUTA,
-                                                                            tpb.CIF,
-                                                                            peng.NPWP,
-                                                                            tpb.NAMA_PENERIMA_BARANG,
-                                                                            tpb.ALAMAT_PENERIMA_BARANG,
-                                                                            plb.TANGGAL_BC11 AS PLB_TANGGAL_BC11,
-                                                                            tpb.TANGGAL_BC11 AS TPB_TANGGAL_BC11,
-                                                                            kon.NOMOR_KONTAINER
-                                                                 FROM plb_header AS plb
-                                                                 LEFT OUTER JOIN plb_kemasan AS plb_kem ON plb.NOMOR_AJU=plb_kem.NOMOR_AJU
-                                                                 LEFT OUTER JOIN referensi_kemasan AS ref_kem ON plb_kem.KODE_JENIS_KEMASAN=ref_kem.KODE_KEMASAN
-                                                                 LEFT OUTER JOIN tpb_header AS tpb ON plb.NOMOR_DAFTAR=tpb.NOMOR_DAFTAR
-                                                                 LEFT OUTER JOIN referensi_negara AS ngr ON tpb.KODE_NEGARA_PEMASOK=ngr.KODE_NEGARA
-                                                                 LEFT OUTER JOIN referensi_pengusaha AS peng ON tpb.NAMA_PENERIMA_BARANG=peng.NAMA
-                                                                 LEFT OUTER JOIN tpb_kontainer AS kon ON tpb.ID=kon.ID_HEADER
-                                                                 $_where
-                                                                --  WHERE plb.TANGGAL_BC11 BETWEEN '2018-05-18' AND '2022-08-08'
-                                                                 GROUP BY kon.ID_HEADER
-                                                                 ORDER BY plb.NOMOR_AJU ASC");
-                                } else {
-                                    $result2 = mysqli_query($dbcon, "SELECT tpb.ID AS TPB_ID,
-                                                                        plb.NOMOR_AJU AS PLB_NOMOR_AJU,
+                                // if (isset($_POST["findOne"])) {
+                                //     $result2 = mysqli_query($dbcon, "SELECT a.*,ngr.URAIAN_NEGARA
+                                //                                      FROM tpb_header AS a
+                                //                                      LEFT OUTER JOIN referensi_negara AS ngr ON a.KODE_NEGARA_PEMASOK=ngr.KODE_NEGARA
+                                //                                      WHERE a.NOMOR_AJU LIKE '%$NoPengajuan%' 
+                                //                                      AND a.TANGGAL_AJU BETWEEN $TanggalInputOne AND $TanggalInputTwo
+                                //                                      AND a.NOMOR_BC11 LIKE '%$NoBC27%'
+                                //                                      AND a.TANGGAL_BC11 BETWEEN $TanggalBC27One AND $TanggalBC27Two
+                                //                                      AND a.NAMA_PEMASOK LIKE '%$Supplier%'
+                                //                                      AND a.ALAMAT_PEMASOK LIKE '%$AlamatSupplier%'
+                                //                                      AND a.KODE_NEGARA_PEMASOK LIKE '%$KodeNegara%'
+                                //                                      AND ngr.URAIAN_NEGARA LIKE '%$KodeNegara%'
+                                //                                     --  AND a.NAMA_PENERIMA_BARANG LIKE '%$Party%' ??
+                                //                                      AND a.KODE_VALUTA LIKE '%$MataUang%'
+                                //                                      AND a.TANGGAL_DAFTAR BETWEEN $TanggalMasukBarangOne AND $TanggalMasukBarangTwo
+                                //                                      AND a.TANGGAL_TTD BETWEEN $TanggalKeluarBarangOne AND $TanggalKeluarBarangTwo
+                                //                                      ORDER BY a.NOMOR_AJU ASC");
+                                // } else {
+                                $result2 = mysqli_query($dbcon, "SELECT plb.NOMOR_AJU AS PLB_NOMOR_AJU,
                                                                         plb.NOMOR_DAFTAR AS PLB_NOMOR_DAFTAR,
                                                                         plb.TANGGAL_DAFTAR AS PLB_TANGGAL_DAFTAR,
 
@@ -432,18 +370,15 @@ if (isset($_POST["findOne"])) {
                                                                         tpb.NAMA_PENERIMA_BARANG,
                                                                         tpb.ALAMAT_PENERIMA_BARANG,
                                                                         plb.TANGGAL_BC11 AS PLB_TANGGAL_BC11,
-                                                                        tpb.TANGGAL_BC11 AS TPB_TANGGAL_BC11,
-                                                                        kon.NOMOR_KONTAINER
+                                                                        tpb.TANGGAL_BC11 AS TPB_TANGGAL_BC11
                                                                  FROM plb_header AS plb
                                                                  LEFT OUTER JOIN plb_kemasan AS plb_kem ON plb.NOMOR_AJU=plb_kem.NOMOR_AJU
                                                                  LEFT OUTER JOIN referensi_kemasan AS ref_kem ON plb_kem.KODE_JENIS_KEMASAN=ref_kem.KODE_KEMASAN
                                                                  LEFT OUTER JOIN tpb_header AS tpb ON plb.NOMOR_DAFTAR=tpb.NOMOR_DAFTAR
                                                                  LEFT OUTER JOIN referensi_negara AS ngr ON tpb.KODE_NEGARA_PEMASOK=ngr.KODE_NEGARA
                                                                  LEFT OUTER JOIN referensi_pengusaha AS peng ON tpb.NAMA_PENERIMA_BARANG=peng.NAMA
-                                                                 LEFT OUTER JOIN tpb_kontainer AS kon ON tpb.ID=kon.ID_HEADER
-                                                                 GROUP BY kon.ID_HEADER
                                                                  ORDER BY plb.NOMOR_AJU ASC LIMIT 0");
-                                }
+                                // }
                                 if (mysqli_num_rows($result2) > 0) {
                                     while ($row2 = mysqli_fetch_array($result2)) {
                                         // FOR TANGGAL INPUT PLB
@@ -474,31 +409,29 @@ if (isset($_POST["findOne"])) {
                                         echo "<td>" . $row2['NPWP'] . "</td>";
                                         echo "<td>" . $row2['NAMA_PENERIMA_BARANG'] . "</td>";
                                         echo "<td>" . $row2['ALAMAT_PENERIMA_BARANG'] . "</td>";
-                                        if ($row2['PLB_TANGGAL_BC11'] == NULL || $row2['PLB_TANGGAL_BC11'] == '') {
-                                            echo "<td style='text-align: center;color: red'><i>Belum ada tanggal</i></td>";
-                                        } else {
-                                            echo "<td>" . $row2['PLB_TANGGAL_BC11'] . "</td>";
-                                        }
+                                        echo "<td>" . $row2['PLB_TANGGAL_BC11'] . "</td>";
                                         if ($row2['TPB_TANGGAL_BC11'] == NULL || $row2['TPB_TANGGAL_BC11'] == '') {
                                             echo "<td style='text-align: center;color: red'><i>Belum ada tanggal</i></td>";
                                         } else {
-                                            echo "<td>" . SUBSTR($row2['TPB_TANGGAL_BC11'], 0, 10) . "</td>";
+                                            echo "<td>" . $row2['TPB_TANGGAL_BC11'] . "</td>";
                                         }
-                                ?>
-                                        <td>
-                                            <a href="#kontainer<?= $row2['TPB_ID'] ?>" class="btn btn-primary" data-toggle="modal" title="Cont. Details"><i class="fas fa-box"></i> Cont. Details</a>
-                                        </td>
+                                        if (isset($_POST["findOne"])) { ?>
+                                            <td>
+                                                <a href="#kontainer<?= $row2['ID'] ?>" class="btn btn-primary" data-toggle="modal" title="Cont. Details"><i class="fas fa-box"></i> Cont. Details</a>
+                                            </td>
+                                        <?php } else { ?>
+                                        <?php } ?>
                                         <?php
                                         echo "</tr>";
                                         ?>
 
                                         <!-- Cont. Details -->
-                                        <div class="modal fade" id="kontainer<?= $row2['TPB_ID'] ?>">
+                                        <div class="modal fade" id="kontainer<?= $row2['ID'] ?>">
                                             <div class="modal-dialog">
                                                 <div class="modal-content">
                                                     <form action="" method="POST">
                                                         <div class="modal-header">
-                                                            <h4 class="modal-title">[Cont. Details <?= $row2['TPB_ID'] ?>] No. Pengajuan - <?= $row2['TPB_NOMOR_AJU'] ?></h4>
+                                                            <h4 class="modal-title">[Cont. Details] No. Pengajuan - <?= $row2['NOMOR_AJU'] ?></h4>
                                                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                                                         </div>
                                                         <div class="modal-body">
@@ -506,7 +439,7 @@ if (isset($_POST["findOne"])) {
                                                                 <div class="row">
                                                                     <div class="col-md-12">
                                                                         <?php
-                                                                        $contDet = mysqli_query($dbcon, "SELECT * FROM tpb_kontainer WHERE ID_HEADER = '$row2[TPB_ID]' ");
+                                                                        $contDet = mysqli_query($dbcon, "SELECT * FROM tpb_kontainer WHERE ID_HEADER = '$row2[ID]' ");
                                                                         if (mysqli_num_rows($contDet) > 0) {
                                                                             $nocont = 0;
                                                                             while ($cont = mysqli_fetch_array($contDet)) {
