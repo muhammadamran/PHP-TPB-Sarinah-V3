@@ -10,18 +10,18 @@ if (isset($_GET["find_"])) {
 	$startdate = $_GET['startdate'];
 	$enddate   = $_GET['enddate'];
 	// FOR AKTIFITAS
-    $me = $_GET['me'];
-    $datame = $dbcon->query("SELECT * FROM view_privileges WHERE USER_NAME='$me'");
-    $resultme = mysqli_fetch_array($datame);
+	$me = $_GET['me'];
+	$datame = $dbcon->query("SELECT * FROM view_privileges WHERE USER_NAME='$me'");
+	$resultme = mysqli_fetch_array($datame);
 
 	$IDUNIQme             = $resultme['USRIDUNIQ'];
-    $InputUsername        = $me;
-    $InputModul           = 'Report/Log System';
-    $InputDescription     = $me . " Expot Data Excel: " .  $startdate ." s.d " .  $enddate .", Simpan Data Sebagai Export Report Log System";
-    $InputAction          = 'Export Excel Laporan Log System';
-    $InputDate            = date('Y-m-d h:m:i');
+	$InputUsername        = $me;
+	$InputModul           = 'Report/Log System';
+	$InputDescription     = $me . " Expot Data Excel: " .  $startdate . " s.d " .  $enddate . ", Simpan Data Sebagai Export Report Log System";
+	$InputAction          = 'Export Excel Laporan Log System';
+	$InputDate            = date('Y-m-d h:m:i');
 
-    $query = $dbcon->query("INSERT INTO tbl_aktifitas
+	$query = $dbcon->query("INSERT INTO tbl_aktifitas
                            (id,IDUNIQ,username,modul,description,action,date_created)
                            VALUES
                            ('','$IDUNIQme','$InputUsername','$InputModul','$InputDescription','$InputAction','$InputDate')");
@@ -105,12 +105,12 @@ function date_indo($date, $print_day = false)
 			$no = 0;
 			while ($row = mysqli_fetch_array($dataTable)) {
 				$no++;
-				?>
+		?>
 				<tr>
 					<!-- 21 -->
 					<td><?= $no ?>. </td>
-					<td style="text-align: left;"><i class="fas fa-calendar-alt"></i> <?= date_indo(SUBSTR($row['date_created'],0,10),TRUE) ?></td>
-					<td style="text-align: left;"><i class="fas fa-clock"></i> <?= SUBSTR($row['date_created'],11) ?></td>
+					<td style="text-align: left;"><i class="fas fa-calendar-alt"></i> <?= date_indo(SUBSTR($row['date_created'], 0, 10), TRUE) ?></td>
+					<td style="text-align: left;"><i class="fas fa-clock"></i> <?= SUBSTR($row['date_created'], 11) ?></td>
 					<td style="text-align: center;"><?= $row['username'] ?></td>
 					<td><?= $row['description'] ?></td>
 				</tr>

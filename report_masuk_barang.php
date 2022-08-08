@@ -106,15 +106,21 @@ if (isset($_POST['filter_date'])) {
                                     </div>
                                 </div>
                                 <!-- End For Filter Tanggal -->
-                                <a href="javascript:;" class="btn btn-sm btn-white m-b-10">
-                                    <img src="assets/img/favicon/excel.png" class="icon-primary-excel" alt="Excel" data-toggle="popover" data-trigger="hover" data-title="Export File Excel" data-placement="top" data-content="Klik untuk mengexport data dalam file Excel"> Export Excel
-                                </a>
-                                <a href="javascript:;" class="btn btn-sm btn-white m-b-10">
-                                    <img src="assets/img/favicon/pdf.png" class="icon-primary-pdf" alt="PDF" data-toggle="popover" data-trigger="hover" data-title="Export File PDF" data-placement="top" data-content="Klik untuk mengexport data dalam file PDF"> Export PDF
-                                </a>
-                                <a href="report_ck5_plb_detail_print.php" class="btn btn-sm btn-white m-b-10">
-                                    <img src="assets/img/favicon/print.png" class="icon-primary-print" alt="Print" data-toggle="popover" data-trigger="hover" data-title="Print File" data-placement="top" data-content="Klik untuk Print File"> Print
-                                </a>
+                                <?php if (isset($_POST['filter_date'])) { ?>
+                                    <form action="./export/excel_report_masuk_barang.php" target="_blank" method="POST" style="display: inline-block;">
+                                        <input type="hidden" name="StartTanggal" value="<?= $StartTanggal; ?>">
+                                        <input type="hidden" name="EndTanggal" value="<?= $EndTanggal; ?>">
+                                        <button type="submit" name="find_" class="btn btn-sm btn-white m-b-10">
+                                            <img src="assets/img/favicon/excel.png" class="icon-primary-excel" alt="Excel" data-toggle="popover" data-trigger="hover" data-title="Export File Excel" data-placement="top" data-content="Klik untuk mengexport data dalam file Excel"> Export Excel
+                                        </button>
+                                    </form>
+                                    <a href="javascript:;" class="btn btn-sm btn-white m-b-10">
+                                        <img src="assets/img/favicon/pdf.png" class="icon-primary-pdf" alt="PDF" data-toggle="popover" data-trigger="hover" data-title="Export File PDF" data-placement="top" data-content="Klik untuk mengexport data dalam file PDF"> Export PDF
+                                    </a>
+                                    <a href="report_ck5_plb_detail_print.php" class="btn btn-sm btn-white m-b-10">
+                                        <img src="assets/img/favicon/print.png" class="icon-primary-print" alt="Print" data-toggle="popover" data-trigger="hover" data-title="Print File" data-placement="top" data-content="Klik untuk Print File"> Print
+                                    </a>
+                                <?php } ?>
                             </span>
                         </div>
                     </div>
