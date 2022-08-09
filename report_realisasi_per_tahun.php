@@ -2051,15 +2051,55 @@ if (isset($_GET['find_TahunAju'])) {
 											<th style="background-color: #348fe2;"></th>
 											<th>%</th>
 											<?php
-											$per_crt_a = $jml_crt_gol_a / $fC_a * 100;
-											$per_ltr_a = $jml_ltr_gol_a / $fL_a * 100;
-											$per_crt_b = $jml_crt_gol_b / $fC_b * 100;
-											$per_ltr_b = $jml_ltr_gol_b / $fL_b * 100;
-											$per_crt_c = $jml_crt_gol_c / $fC_c * 100;
-											$per_ltr_c = $jml_ltr_gol_c / $fL_c * 100;
+											// $per_crt_a = $jml_crt_gol_a / $fC_a * 100;
+											// $per_ltr_a = $jml_ltr_gol_a / $fL_a * 100;
+											// $per_crt_b = $jml_crt_gol_b / $fC_b * 100;
+											// $per_ltr_b = $jml_ltr_gol_b / $fL_b * 100;
+											// $per_crt_c = $jml_crt_gol_c / $fC_c * 100;
+											// $per_ltr_c = $jml_ltr_gol_c / $fL_c * 100;
 
-											$per_crt_total = $jml_crt_gol_total / $JmlCarton * 100;
-											$per_ltr_total = $jml_ltr_gol_total / $JmlLiter * 100;
+											// $per_crt_total = $jml_crt_gol_total / $JmlCarton * 100;
+											// $per_ltr_total = $jml_ltr_gol_total / $JmlLiter * 100;
+											if ($fC_a == 0) {
+												$per_crt_a = $jml_crt_gol_a;
+											} else {
+												$per_crt_a = $jml_crt_gol_a / $fC_a * 100;
+											}
+											if ($fL_a == 0) {
+												$per_ltr_a = $jml_ltr_gol_a;
+											} else {
+												$per_ltr_a = $jml_ltr_gol_a / $fL_a * 100;
+											}
+											if ($fC_b == 0) {
+												$per_crt_b = $jml_crt_gol_b;
+											} else {
+												$per_crt_b = $jml_crt_gol_b / $fC_b * 100;
+											}
+											if ($fL_b == 0) {
+												$per_ltr_b = $jml_ltr_gol_b;
+											} else {
+												$per_ltr_b = $jml_ltr_gol_b / $fL_b * 100;
+											}
+											if ($fC_c == 0) {
+												$per_crt_c = $jml_crt_gol_c;
+											} else {
+												$per_crt_c = $jml_crt_gol_c / $fC_c * 100;
+											}
+											if ($fL_c == 0) {
+												$per_ltr_c = $jml_ltr_gol_c;
+											} else {
+												$per_ltr_c = $jml_ltr_gol_c / $fL_c * 100;
+											}
+											if ($JmlCarton == 0) {
+												$per_crt_total = $jml_crt_gol_total;
+											} else {
+												$per_crt_total = $jml_crt_gol_total / $JmlCarton * 100;
+											}
+											if ($JmlCarton == 0) {
+												$per_ltr_total = $jml_ltr_gol_total;
+											} else {
+												$per_ltr_total = $jml_ltr_gol_total / $JmlLiter * 100;
+											}
 											?>
 											<th style="text-align: center;background: <?= $bg_per_crt_a; ?>;"><?= round($per_crt_a, 0, PHP_ROUND_HALF_UP) ?>%</th>
 											<th style="text-align: center;background: <?= $bg_per_ltr_a; ?>;"><?= round($per_ltr_a, 0, PHP_ROUND_HALF_UP) ?>%</th>
